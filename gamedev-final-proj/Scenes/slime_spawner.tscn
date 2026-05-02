@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://camirrwjf4p5i"]
+
+[ext_resource type="Script" uid="uid://rhgy6lu1gok4" path="res://Scripts/spawner.gd" id="1_2bop2"]
+[ext_resource type="PackedScene" uid="uid://c7ew4yryu63ik" path="res://Scenes/slime.tscn" id="2_mdv8j"]
+
+[node name="spawner" type="Node2D" unique_id=5140949 node_paths=PackedStringArray("player") groups=["player"]]
+script = ExtResource("1_2bop2")
+enemy_scene = ExtResource("2_mdv8j")
+player = NodePath(".")
