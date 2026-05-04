@@ -9,9 +9,9 @@ Game Development course - Final Project
 ### Enemy Slime
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/c8ad4816-8a46-47b6-8eed-e7cc11aa263d" />
 - walk, death, hurt animation
-- enemy smart AI navigation will chase enemy player always
+- enemy smart AI navigation will always chase enemy player
 
 ### Partial Map 
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/4b833379-e6e4-439d-8c4f-b2f1b553286c" />
 - made partial map backround
-- made spawners for wave of enemies
+- made spawners for wave of enemies (slime)
