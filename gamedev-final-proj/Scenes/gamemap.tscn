@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cppjinmref285" path="res://GAME ASSETS/dungeon_floor_and_walls_sprite.png" id="1_ht2io"]
 [ext_resource type="PackedScene" uid="uid://csrrsm4452wfy" path="res://Scenes/player.tscn" id="1_ury6q"]
 [ext_resource type="PackedScene" uid="uid://camirrwjf4p5i" path="res://Scenes/slime_spawner.tscn" id="3_c7vku"]
+[ext_resource type="PackedScene" uid="uid://k21bepoh05dr" path="res://Scenes/hud.tscn" id="4_jnk7d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ht2io"]
 texture = ExtResource("1_ht2io")
@@ -4261,14 +4262,16 @@ position = Vector2(66, 82)
 
 [node name="slime spawner" type="Node" parent="." unique_id=1734827586]
 
-[node name="spawner" parent="slime spawner" unique_id=5140949 groups=["player"] instance=ExtResource("3_c7vku")]
+[node name="spawner" parent="slime spawner" unique_id=5140949 instance=ExtResource("3_c7vku")]
 position = Vector2(2876, -1527)
 
-[node name="spawner2" parent="slime spawner" unique_id=1962795552 groups=["player"] instance=ExtResource("3_c7vku")]
+[node name="spawner2" parent="slime spawner" unique_id=1962795552 instance=ExtResource("3_c7vku")]
 position = Vector2(2247, 1596)
 
-[node name="spawner3" parent="slime spawner" unique_id=1650584080 groups=["player"] instance=ExtResource("3_c7vku")]
+[node name="spawner3" parent="slime spawner" unique_id=1650584080 instance=ExtResource("3_c7vku")]
 position = Vector2(-2241, 1596)
 
-[node name="spawner4" parent="slime spawner" unique_id=141692200 groups=["player"] instance=ExtResource("3_c7vku")]
+[node name="spawner4" parent="slime spawner" unique_id=141692200 instance=ExtResource("3_c7vku")]
 position = Vector2(-2241, -1527)
+
+[node name="HUD" parent="." unique_id=870673987 groups=["hud"] instance=ExtResource("4_jnk7d")]

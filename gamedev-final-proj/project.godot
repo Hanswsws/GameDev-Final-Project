@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="gamedev_FinalProj"
-run/main_scene="uid://wx45tsose4xj"
+run/main_scene="uid://btkppphhr0pj5"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=625
 
 [global_group]
 

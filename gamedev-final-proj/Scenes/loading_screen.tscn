@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://b2e06r8m4mq45"]
+
+[ext_resource type="Script" uid="uid://cab5p638syc2x" path="res://Scripts/loading_screen.gd" id="1_oobaa"]
+
+[node name="LoadingScreen" type="Control" unique_id=123120070]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oobaa")
+
+[node name="BG" type="ColorRect" parent="." unique_id=1570056796]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.06, 0.05, 0.05, 1)
+
+[node name="DungeonTiles" type="GridContainer" parent="." unique_id=1006499608]
+modulate = Color(1, 1, 1, 0.18)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 20
+
+[node name="DimOverlay" type="ColorRect" parent="." unique_id=1431419996]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.04, 0.03, 0.03, 0.5)
+
+[node name="Embers" type="GPUParticles2D" parent="." unique_id=549362024]
+amount = 30
+lifetime = 4.0
+randomness = 1.0
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1063079778]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=953321499]
+custom_minimum_size = Vector2(420, 0)
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=926467152]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.08, 0.08, 1)
+theme_override_font_sizes/font_size = 52
+text = "GUN CHAOS"
+horizontal_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1073802072]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.45, 0.42, 0.42, 1)
+theme_override_font_sizes/font_size = 13
+text = "survive. evolve. dominate."
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="CenterContainer/VBoxContainer" unique_id=1983404090]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="LoadingLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=296613041]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.58, 0.58, 1)
+theme_override_font_sizes/font_size = 16
+text = "Loading..."
+horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="CenterContainer/VBoxContainer" unique_id=412593949]
+custom_minimum_size = Vector2(420, 18)
+layout_mode = 2
+show_percentage = false
+
+[node name="TipLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1758856313]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.38, 0.38, 1)
+theme_override_font_sizes/font_size = 13
+horizontal_alignment = 1
+autowrap_mode = 3

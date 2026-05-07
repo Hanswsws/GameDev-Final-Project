@@ -1,0 +1,1558 @@
+[gd_scene format=3 uid="uid://btkppphhr0pj5"]
+
+[ext_resource type="Script" uid="uid://b4wks6xomh0cs" path="res://Scripts/main_menu.gd" id="1_28flt"]
+[ext_resource type="Theme" uid="uid://vd3vpjodq4vi" path="res://arena_theme.tres" id="1_48xlc"]
+
+[node name="MainMenu" type="Control" unique_id=1124488915]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_48xlc")
+script = ExtResource("1_28flt")
+
+[node name="BG" type="ColorRect" parent="." unique_id=1023019496]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1, 0.09, 0.08, 1)
+
+[node name="TileRow1" type="HBoxContainer" parent="." unique_id=1703053292]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 47.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow1" unique_id=768827800]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow1" unique_id=777674090]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow1" unique_id=350906682]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow1" unique_id=818205024]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow1" unique_id=381546919]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow1" unique_id=711973128]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow1" unique_id=1545150991]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow1" unique_id=1369348887]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow1" unique_id=1607121148]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow1" unique_id=663235876]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow1" unique_id=365918454]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow1" unique_id=612387175]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow1" unique_id=1956278317]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow1" unique_id=1253176744]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow1" unique_id=1942110816]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow1" unique_id=1010618409]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow1" unique_id=639439276]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow1" unique_id=1353651940]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow1" unique_id=344442628]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow1" unique_id=1705807338]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="TileRow2" type="HBoxContainer" parent="." unique_id=384744783]
+layout_mode = 0
+offset_top = 48.0
+offset_right = 1280.0
+offset_bottom = 95.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow2" unique_id=884816876]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow2" unique_id=1690310536]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow2" unique_id=1213791699]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow2" unique_id=690977175]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow2" unique_id=1135391317]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow2" unique_id=838352433]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow2" unique_id=1161132074]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow2" unique_id=2005866100]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow2" unique_id=269146459]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow2" unique_id=433503123]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow2" unique_id=799655527]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow2" unique_id=521359127]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow2" unique_id=44588016]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow2" unique_id=1541262167]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow2" unique_id=1892065250]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow2" unique_id=626389719]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow2" unique_id=192673434]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow2" unique_id=1230087462]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow2" unique_id=277608175]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow2" unique_id=1305699026]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="TileRow3" type="HBoxContainer" parent="." unique_id=976328261]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 1280.0
+offset_bottom = 143.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow3" unique_id=1353572764]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow3" unique_id=177949372]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow3" unique_id=505163720]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow3" unique_id=205848228]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow3" unique_id=1118095296]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow3" unique_id=928208900]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow3" unique_id=1727833898]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow3" unique_id=395099309]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow3" unique_id=804624317]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow3" unique_id=829162659]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow3" unique_id=1764494129]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow3" unique_id=586787190]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow3" unique_id=2072332984]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow3" unique_id=1022787533]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow3" unique_id=1321517]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow3" unique_id=1008625526]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow3" unique_id=1470167882]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow3" unique_id=908607381]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow3" unique_id=362047946]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow3" unique_id=1182557129]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="TileRow4" type="HBoxContainer" parent="." unique_id=1323960869]
+layout_mode = 0
+offset_top = 144.0
+offset_right = 1280.0
+offset_bottom = 191.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow4" unique_id=890295270]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow4" unique_id=1875430884]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow4" unique_id=1071142375]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow4" unique_id=693868799]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow4" unique_id=1489671155]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow4" unique_id=409055990]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow4" unique_id=1881382224]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow4" unique_id=949229758]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow4" unique_id=17978833]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow4" unique_id=997167031]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow4" unique_id=1514647520]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow4" unique_id=264396413]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow4" unique_id=72522586]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow4" unique_id=425885585]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow4" unique_id=1036942413]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow4" unique_id=1297252723]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow4" unique_id=1006502376]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow4" unique_id=1728487961]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow4" unique_id=1072591529]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow4" unique_id=292709850]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="TileRow5" type="HBoxContainer" parent="." unique_id=322090432]
+layout_mode = 0
+offset_top = 192.0
+offset_right = 1280.0
+offset_bottom = 239.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow5" unique_id=137385063]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow5" unique_id=376815243]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow5" unique_id=1913338206]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow5" unique_id=1214017569]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow5" unique_id=1649074075]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow5" unique_id=322183350]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow5" unique_id=2129352089]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow5" unique_id=665281795]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow5" unique_id=590769477]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow5" unique_id=1899112807]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow5" unique_id=1381447567]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow5" unique_id=1218532192]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow5" unique_id=1778511196]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow5" unique_id=965023018]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow5" unique_id=1770589229]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow5" unique_id=1766260506]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow5" unique_id=2010115565]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow5" unique_id=201589397]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow5" unique_id=2049786680]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow5" unique_id=1912610816]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="TileRow6" type="HBoxContainer" parent="." unique_id=2083442223]
+layout_mode = 0
+offset_top = 240.0
+offset_right = 1280.0
+offset_bottom = 287.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow6" unique_id=1735155441]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow6" unique_id=261534249]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow6" unique_id=1180346778]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow6" unique_id=654297425]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow6" unique_id=1780824565]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow6" unique_id=1512559766]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow6" unique_id=1345782427]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow6" unique_id=911591144]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow6" unique_id=1203231723]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow6" unique_id=1266421648]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow6" unique_id=1022760725]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow6" unique_id=1890106272]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow6" unique_id=295444811]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow6" unique_id=1295682499]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow6" unique_id=510165500]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow6" unique_id=330168104]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow6" unique_id=1405522016]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow6" unique_id=1069250564]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow6" unique_id=103684240]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow6" unique_id=1080386779]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="TileRow7" type="HBoxContainer" parent="." unique_id=722648235]
+layout_mode = 0
+offset_top = 288.0
+offset_right = 1280.0
+offset_bottom = 335.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow7" unique_id=434541361]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow7" unique_id=1696201094]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow7" unique_id=485213736]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow7" unique_id=1045940560]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow7" unique_id=723761200]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow7" unique_id=698865812]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow7" unique_id=1267256459]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow7" unique_id=1427812488]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow7" unique_id=294211232]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow7" unique_id=1648666087]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow7" unique_id=255387727]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow7" unique_id=1571456954]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow7" unique_id=1058665043]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow7" unique_id=1784942936]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow7" unique_id=832814586]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow7" unique_id=247085259]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow7" unique_id=1994089743]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow7" unique_id=1544470729]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow7" unique_id=1493377877]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow7" unique_id=969901609]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="TileRow8" type="HBoxContainer" parent="." unique_id=501930188]
+layout_mode = 0
+offset_top = 336.0
+offset_right = 1280.0
+offset_bottom = 383.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow8" unique_id=1830218630]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow8" unique_id=910422012]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow8" unique_id=430491141]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow8" unique_id=815706142]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow8" unique_id=2047051354]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow8" unique_id=1609887897]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow8" unique_id=1286503007]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow8" unique_id=433004439]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow8" unique_id=1820352654]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow8" unique_id=1972540693]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow8" unique_id=521690755]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow8" unique_id=244302769]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow8" unique_id=800539930]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow8" unique_id=653188461]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow8" unique_id=1481988559]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow8" unique_id=220912659]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow8" unique_id=1574941604]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow8" unique_id=1484245299]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow8" unique_id=732318929]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow8" unique_id=2101989185]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="TileRow9" type="HBoxContainer" parent="." unique_id=1459809572]
+layout_mode = 0
+offset_top = 384.0
+offset_right = 1280.0
+offset_bottom = 431.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow9" unique_id=824749061]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow9" unique_id=693254453]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow9" unique_id=1274358527]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow9" unique_id=1259737734]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow9" unique_id=1724008661]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow9" unique_id=178590956]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow9" unique_id=431854944]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow9" unique_id=1656521296]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow9" unique_id=2039361716]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow9" unique_id=1203947092]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow9" unique_id=1243018582]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow9" unique_id=1371404560]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow9" unique_id=702163801]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow9" unique_id=1097211740]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow9" unique_id=1841430034]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow9" unique_id=388370508]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow9" unique_id=1745928187]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow9" unique_id=864043863]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow9" unique_id=1997997076]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow9" unique_id=259037730]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="TileRow10" type="HBoxContainer" parent="." unique_id=1382832009]
+layout_mode = 0
+offset_top = 432.0
+offset_right = 1280.0
+offset_bottom = 479.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow10" unique_id=1246082890]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow10" unique_id=25412724]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow10" unique_id=1556096397]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow10" unique_id=367924098]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow10" unique_id=411677047]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow10" unique_id=128377550]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow10" unique_id=1676464753]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow10" unique_id=2077973651]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow10" unique_id=1879088202]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow10" unique_id=824826472]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow10" unique_id=1528094727]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow10" unique_id=1729387711]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow10" unique_id=716636121]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow10" unique_id=645662937]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow10" unique_id=112606499]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow10" unique_id=1935262677]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow10" unique_id=12561253]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow10" unique_id=962767876]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow10" unique_id=1987710006]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow10" unique_id=1626416664]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="TileRow11" type="HBoxContainer" parent="." unique_id=684020918]
+layout_mode = 0
+offset_top = 480.0
+offset_right = 1280.0
+offset_bottom = 527.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow11" unique_id=959700217]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow11" unique_id=422180105]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow11" unique_id=1254762702]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow11" unique_id=255373551]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow11" unique_id=1540450090]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow11" unique_id=1539869219]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow11" unique_id=314298876]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow11" unique_id=866934731]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow11" unique_id=828013094]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow11" unique_id=1893392181]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow11" unique_id=1435249330]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow11" unique_id=1056078107]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow11" unique_id=1068395390]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow11" unique_id=1294882679]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow11" unique_id=508888186]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow11" unique_id=1607679090]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow11" unique_id=2140063415]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow11" unique_id=794164449]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow11" unique_id=1087081690]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow11" unique_id=384005971]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="TileRow12" type="HBoxContainer" parent="." unique_id=144838121]
+layout_mode = 0
+offset_top = 528.0
+offset_right = 1280.0
+offset_bottom = 575.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow12" unique_id=1369167239]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow12" unique_id=791985729]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow12" unique_id=2048638051]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow12" unique_id=346132958]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow12" unique_id=1792829191]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow12" unique_id=1034092929]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow12" unique_id=1626394068]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow12" unique_id=1041023462]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow12" unique_id=140248235]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow12" unique_id=569249191]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow12" unique_id=1648821161]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow12" unique_id=69566272]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow12" unique_id=1769204553]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow12" unique_id=856658570]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow12" unique_id=1187974544]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow12" unique_id=690660477]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow12" unique_id=486174292]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow12" unique_id=1133028910]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow12" unique_id=1705825563]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow12" unique_id=1214209942]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="TileRow13" type="HBoxContainer" parent="." unique_id=1181004733]
+layout_mode = 0
+offset_top = 576.0
+offset_right = 1280.0
+offset_bottom = 623.0
+theme_override_constants/separation = 1
+
+[node name="T1" type="ColorRect" parent="TileRow13" unique_id=2089116674]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T2" type="ColorRect" parent="TileRow13" unique_id=144961807]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T3" type="ColorRect" parent="TileRow13" unique_id=1270731275]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T4" type="ColorRect" parent="TileRow13" unique_id=1803325062]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T5" type="ColorRect" parent="TileRow13" unique_id=1572473492]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T6" type="ColorRect" parent="TileRow13" unique_id=150183097]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T7" type="ColorRect" parent="TileRow13" unique_id=1305630412]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="T8" type="ColorRect" parent="TileRow13" unique_id=1304490928]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.14, 0.13, 0.12, 1)
+
+[node name="T9" type="ColorRect" parent="TileRow13" unique_id=214498629]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T10" type="ColorRect" parent="TileRow13" unique_id=1952114721]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T11" type="ColorRect" parent="TileRow13" unique_id=921890330]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.17, 0.16, 0.15, 1)
+
+[node name="T12" type="ColorRect" parent="TileRow13" unique_id=315728578]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.21, 0.2, 0.19, 1)
+
+[node name="T13" type="ColorRect" parent="TileRow13" unique_id=1804196930]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T14" type="ColorRect" parent="TileRow13" unique_id=606365704]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.19, 0.18, 0.17, 1)
+
+[node name="T15" type="ColorRect" parent="TileRow13" unique_id=1720353952]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.15, 0.14, 0.13, 1)
+
+[node name="T16" type="ColorRect" parent="TileRow13" unique_id=989392752]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T17" type="ColorRect" parent="TileRow13" unique_id=900763859]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.2, 0.19, 0.18, 1)
+
+[node name="T18" type="ColorRect" parent="TileRow13" unique_id=1244012186]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.13, 0.12, 0.11, 1)
+
+[node name="T19" type="ColorRect" parent="TileRow13" unique_id=809211640]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.16, 0.15, 0.14, 1)
+
+[node name="T20" type="ColorRect" parent="TileRow13" unique_id=203225212]
+custom_minimum_size = Vector2(63, 46)
+layout_mode = 2
+color = Color(0.18, 0.17, 0.16, 1)
+
+[node name="DimOverlay" type="ColorRect" parent="." unique_id=151830956]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.04, 0.03, 0.03, 0.52)
+
+[node name="Embers" type="GPUParticles2D" parent="." unique_id=1786216960]
+position = Vector2(640, 760)
+amount = 50
+lifetime = 5.0
+randomness = 1.0
+
+[node name="PlayerShowcase" type="TextureRect" parent="." unique_id=1834498514]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 140.0
+offset_right = 420.0
+offset_bottom = 500.0
+stretch_mode = 5
+
+[node name="TitleLabel" type="Label" parent="." unique_id=466225172]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 130.0
+offset_right = 1220.0
+offset_bottom = 220.0
+theme_override_colors/font_color = Color(0.9, 0.08, 0.08, 1)
+theme_override_font_sizes/font_size = 62
+text = "GUN CHAOS"
+horizontal_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="." unique_id=1698281545]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 225.0
+offset_right = 1220.0
+offset_bottom = 255.0
+theme_override_colors/font_color = Color(0.45, 0.42, 0.42, 1)
+theme_override_font_sizes/font_size = 14
+text = "survive. evolve. dominate."
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="." unique_id=1182429245]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 300.0
+offset_right = 1180.0
+offset_bottom = 365.0
+theme_override_font_sizes/font_size = 22
+text = "⚔   PLAY"
+
+[node name="CreditsButton" type="Button" parent="." unique_id=1013310333]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 385.0
+offset_right = 1180.0
+offset_bottom = 450.0
+theme_override_font_sizes/font_size = 22
+text = "✦   CREDITS"
+
+[node name="ExitButton" type="Button" parent="." unique_id=1092385262]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 470.0
+offset_right = 1180.0
+offset_bottom = 535.0
+theme_override_font_sizes/font_size = 22
+text = "✖   EXIT GAME"
+
+[node name="CreditsOverlay" type="Control" parent="." unique_id=1466863533]
+visible = false
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DimBackground" type="ColorRect" parent="CreditsOverlay" unique_id=1705000238]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.82)
+
+[node name="Panel" type="PanelContainer" parent="CreditsOverlay" unique_id=486382035]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.0
+offset_top = -210.0
+offset_right = 220.0
+offset_bottom = 210.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="CreditsOverlay/Panel" unique_id=303310223]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="CreditsTitle" type="Label" parent="CreditsOverlay/Panel/VBox" unique_id=1624498162]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.08, 0.08, 1)
+theme_override_font_sizes/font_size = 30
+text = "CREDITS"
+horizontal_alignment = 1
+
+[node name="Divider" type="HSeparator" parent="CreditsOverlay/Panel/VBox" unique_id=1895582177]
+layout_mode = 2
+
+[node name="CreditsText" type="Label" parent="CreditsOverlay/Panel/VBox" unique_id=1038216281]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.78, 0.78, 0.78, 1)
+theme_override_font_sizes/font_size = 15
+text = "Lead Programmer / Godot Specialist
+Hans Dorego
+
+Artist & Animator / Audio & UI / Tester
+Jeil Ouano
+
+Game Designer / Level Designer
+Maurice Fontanosa
+
+Built with Godot Engine 4"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="CreditsOverlay/Panel/VBox" unique_id=1937233736]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="CloseCreditsButton" type="Button" parent="CreditsOverlay/Panel/VBox" unique_id=207879552]
+custom_minimum_size = Vector2(200, 48)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "✖   CLOSE"

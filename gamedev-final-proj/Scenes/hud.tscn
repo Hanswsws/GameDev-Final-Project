@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://k21bepoh05dr"]
+
+[ext_resource type="Script" uid="uid://dein2gkhovk4k" path="res://Scripts/hud.gd" id="1_hud"]
+[ext_resource type="PackedScene" uid="uid://cf6755cij4ukg" path="res://Scenes/settings_overlay.tscn" id="2_settings"]
+[ext_resource type="PackedScene" uid="uid://df6bse4gmmlw2" path="res://Scenes/death_overlay.tscn" id="3_death"]
+
+[node name="HUD" type="CanvasLayer" unique_id=870673987]
+script = ExtResource("1_hud")
+
+[node name="SettingsButton" type="Button" parent="." unique_id=1522992480]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -114.0
+offset_top = 5.0
+offset_right = -4.0
+offset_bottom = 45.0
+grow_horizontal = 0
+tooltip_text = "Pause / Settings  [Esc]"
+theme_override_font_sizes/font_size = 20
+text = "||"
+
+[node name="SettingsOverlay" parent="." unique_id=2147044789 instance=ExtResource("2_settings")]
+
+[node name="DeathOverlay" parent="." unique_id=89858161 instance=ExtResource("3_death")]
