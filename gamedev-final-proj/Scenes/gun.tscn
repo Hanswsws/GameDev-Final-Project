@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://oaea015a4si2"]
+
+[ext_resource type="Texture2D" uid="uid://cjd2t5afwj06a" path="res://GAME ASSETS/GUN.png" id="1_nxj5y"]
+[ext_resource type="Script" uid="uid://c4w1nrrwfxtn4" path="res://Scripts/gun.gd" id="1_oqrbh"]
+[ext_resource type="Texture2D" uid="uid://cgpj43oqcmgig" path="res://GAME ASSETS/GunFlash.png" id="3_t6ynv"]
+
+[node name="gun" type="Node2D" unique_id=957549946]
+script = ExtResource("1_oqrbh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=546375943]
+position = Vector2(37, -12)
+scale = Vector2(0.015980348, 0.012115919)
+texture = ExtResource("1_nxj5y")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=2000831748]
+position = Vector2(158, -26)
+
+[node name="flash" type="Sprite2D" parent="." unique_id=1489807042]
+visible = false
+position = Vector2(191.00002, -25.999998)
+scale = Vector2(0.3671875, 0.30175784)
+texture = ExtResource("3_t6ynv")
+
+[node name="flashTimer" type="Timer" parent="flash" unique_id=2134368902]
+wait_time = 0.1
+one_shot = true
+
+[connection signal="timeout" from="flash/flashTimer" to="flash" method="hide"]

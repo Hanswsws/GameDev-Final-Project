@@ -15,6 +15,10 @@ run/main_scene="uid://btkppphhr0pj5"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Musicmanager="*uid://dghyttwjk63n"
+
 [display]
 
 window/size/viewport_width=1280
@@ -23,6 +27,7 @@ window/size/viewport_height=625
 [global_group]
 
 player=""
+enemies=""
 
 [input]
 

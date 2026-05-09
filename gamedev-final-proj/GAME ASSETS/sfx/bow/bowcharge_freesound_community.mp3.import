@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cpu8722dnvj1s"
+path="res://.godot/imported/bowcharge_freesound_community.mp3-2ffff5777849d9cc8d39b24665ea0462.mp3str"
+
+[deps]
+
+source_file="res://GAME ASSETS/sfx/bow/bowcharge_freesound_community.mp3"
+dest_files=["res://.godot/imported/bowcharge_freesound_community.mp3-2ffff5777849d9cc8d39b24665ea0462.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

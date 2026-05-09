@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ykqku2blia73"
+path="res://.godot/imported/swordslash_universfield.mp3-864100b3f8f0f0e625b531ea0111299a.mp3str"
+
+[deps]
+
+source_file="res://GAME ASSETS/sfx/sword/swordslash_universfield.mp3"
+dest_files=["res://.godot/imported/swordslash_universfield.mp3-864100b3f8f0f0e625b531ea0111299a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

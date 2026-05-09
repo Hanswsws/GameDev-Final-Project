@@ -17,6 +17,13 @@ func _ready():
 	respawn_position = global_position
 
 func _physics_process(delta:float) -> void:
+	var mouse_pos = get_global_mouse_position()
+
+	if mouse_pos.x < global_position.x:
+		sprite.flip_h = true
+	else:
+		sprite.flip_h = false
+		
 	if dead or hurt:
 		move_and_slide()
 		return
@@ -28,20 +35,14 @@ func _physics_process(delta:float) -> void:
 
 	var direction = Vector2.ZERO
 
-	if Input.is_action_pressed("left"):
-		direction.x -= 1
-	if Input.is_action_pressed("right"):
-		direction.x += 1
-	if Input.is_action_pressed("up"):
-		direction.y -= 1
-	if Input.is_action_pressed("down"):
-		direction.y += 1
+	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
+	direction.y = Input.get_action_strength("down") - Input.get_action_strength("up")
 
 	direction = direction.normalized()
+
 	velocity = direction * speed
 
 	if direction != Vector2.ZERO:
-		sprite.flip_h = direction.x < 0
 		sprite.play("walk")
 	else:
 		sprite.play("idle")
@@ -49,7 +50,7 @@ func _physics_process(delta:float) -> void:
 	move_and_slide()
 
 # ---------------- ATTACK 1 ----------------
-func attack1():
+func atk():
 	attacking = true
 	sprite.play("attack1")
 	attack_area.monitoring = true
@@ -59,7 +60,7 @@ func attack1():
 
 # ---------------- DAMAGE ENEMY ----------------
 func _on_attackarea_body_entered(body: Node2D) -> void:
-	if body.is_in_group("enemy"):
+	if body.is_in_group("enemies"):
 		body.take_damage(current_damage)
 
 # ---------------- PLAYER TAKES DAMAGE ----------------

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhhoa6aqofu4k"
+path="res://.godot/imported/swordselect_dragon-studio.mp3-30e3608c68e41e33d41612fa42b09364.mp3str"
+
+[deps]
+
+source_file="res://GAME ASSETS/sfx/sword/swordselect_dragon-studio.mp3"
+dest_files=["res://.godot/imported/swordselect_dragon-studio.mp3-30e3608c68e41e33d41612fa42b09364.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b4wks6xomh0cs" path="res://Scripts/main_menu.gd" id="1_28flt"]
 [ext_resource type="Theme" uid="uid://vd3vpjodq4vi" path="res://arena_theme.tres" id="1_48xlc"]
+[ext_resource type="AudioStream" uid="uid://3cacbb7g2bot" path="res://GAME ASSETS/sfx/menuclicksandsounds_not_amasingrock.mp3" id="3_1ehe0"]
 
 [node name="MainMenu" type="Control" unique_id=1124488915]
 layout_mode = 3
@@ -1556,3 +1557,6 @@ custom_minimum_size = Vector2(200, 48)
 layout_mode = 2
 theme_override_font_sizes/font_size = 16
 text = "✖   CLOSE"
+
+[node name="btn_sfx" type="AudioStreamPlayer2D" parent="." unique_id=987882138]
+stream = ExtResource("3_1ehe0")

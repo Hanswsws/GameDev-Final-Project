@@ -8,10 +8,13 @@ extends Control
 @onready var embers            = $Embers
 @onready var player_showcase   = $PlayerShowcase
 @onready var title_label       = $TitleLabel
+@onready var btn_sfx: AudioStreamPlayer2D= $btn_sfx
+
 
 var title_pulse_time = 0.0
 
 func _ready():
+	Musicmanager.play_menu_music()
 	play_button.pressed.connect(_on_play_pressed)
 	credits_button.pressed.connect(_on_credits_pressed)
 	exit_button.pressed.connect(_on_exit_pressed)
@@ -51,16 +54,19 @@ func _process(delta):
 	title_label.modulate = Color(pulse, pulse * 0.09, pulse * 0.09, 1.0)
 
 func _on_play_pressed():
+	btn_sfx.play()
+	Musicmanager.play_battle_music()
+	await get_tree().create_timer(0.3).timeout
 	get_tree().change_scene_to_file("res://Scenes/loading_screen.tscn")
-
 func _on_credits_pressed():
 	credits_overlay.visible = true
-
+	btn_sfx.play()
 func _on_close_credits_pressed():
 	credits_overlay.visible = false
-
+	btn_sfx.play()
 func _on_exit_pressed():
 	get_tree().quit()
+	btn_sfx.play()
 
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):

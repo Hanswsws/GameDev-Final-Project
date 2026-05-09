@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://bjwqdbtve3hlk" path="res://Scripts/player.gd" id="1_vgqql"]
 [ext_resource type="Texture2D" uid="uid://cxuqjkyy4xqyi" path="res://GAME ASSETS/PLAYER SPRITE_FINAL.png" id="2_vgqql"]
 [ext_resource type="Texture2D" uid="uid://lsfhcheur06c" path="res://GAME ASSETS/PLAYER SPRITE_WALK.png" id="3_fkybt"]
+[ext_resource type="PackedScene" uid="uid://oaea015a4si2" path="res://Scenes/gun.tscn" id="5_fkybt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vgqql"]
 atlas = ExtResource("1_6t5aa")
@@ -99,10 +100,13 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3smsa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3smsa")
 }],
-"loop": true,
+"loop": false,
 "name": &"death",
-"speed": 2.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -117,7 +121,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gymyn")
 }],
-"loop": true,
+"loop": false,
 "name": &"hurt",
 "speed": 10.0
 }, {
@@ -163,14 +167,14 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bi64h")
 }],
-"loop": true,
+"loop": false,
 "name": &"walk",
 "speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2ijsl"]
 radius = 62.0
-height = 186.0
+height = 162.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_p1odr"]
 radius = 285.08594
@@ -180,16 +184,14 @@ collision_layer = 3
 script = ExtResource("1_vgqql")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=206098019]
-position = Vector2(-1.999999, 0)
+position = Vector2(3, -50)
 scale = Vector2(1.40625, 1.4257811)
 sprite_frames = SubResource("SpriteFrames_bi64h")
-animation = &"walk"
+animation = &"death"
 autoplay = "idle"
-frame_progress = 0.61575115
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=157552740]
-visible = false
-position = Vector2(-2, -2)
+position = Vector2(24, -29)
 shape = SubResource("CapsuleShape2D_2ijsl")
 
 [node name="attackarea" type="Area2D" parent="." unique_id=1111865705]
@@ -206,5 +208,8 @@ limit_left = -9998958
 limit_top = -9998297
 limit_right = 10001042
 limit_bottom = 3900
+
+[node name="gun" parent="." unique_id=957549946 instance=ExtResource("5_fkybt")]
+position = Vector2(1, 1)
 
 [connection signal="body_entered" from="attackarea" to="." method="_on_attackarea_body_entered"]

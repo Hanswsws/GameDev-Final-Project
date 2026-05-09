@@ -4,7 +4,7 @@ extends Node2D
 @export var player: Node2D
 @export var spawn_radius := 400.0
 @export var min_spawn_distance := 200.0
-@export var spawn_rate := 1.0
+@export var spawn_rate := 2.0
 
 var time_passed := 0.0
 

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3cacbb7g2bot"
+path="res://.godot/imported/menuclicksandsounds_not_amasingrock.mp3-f8606c0a6dbe299d477f951b4694d615.mp3str"
+
+[deps]
+
+source_file="res://GAME ASSETS/sfx/menuclicksandsounds_not_amasingrock.mp3"
+dest_files=["res://.godot/imported/menuclicksandsounds_not_amasingrock.mp3-f8606c0a6dbe299d477f951b4694d615.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

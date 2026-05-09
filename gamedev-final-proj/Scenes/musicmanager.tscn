@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dghyttwjk63n"]
+
+[ext_resource type="AudioStream" uid="uid://dcp6fn8b4hclr" path="res://GAME ASSETS/sfx/battlemusic_vespidaze.mp3" id="1_15h2t"]
+[ext_resource type="Script" uid="uid://b7hccugnvg5qv" path="res://Scripts/musicmanager.gd" id="1_wrb0n"]
+[ext_resource type="AudioStream" uid="uid://c5m78qhjm3g2l" path="res://GAME ASSETS/sfx/bossbattle_davidjbarrios.mp3" id="2_wrb0n"]
+[ext_resource type="AudioStream" uid="uid://bh0k6jle25bqy" path="res://GAME ASSETS/sfx/menumusic_KadenCook.mp3" id="4_ub75k"]
+
+[node name="musicmanager" type="Node" unique_id=1666232313]
+script = ExtResource("1_wrb0n")
+
+[node name="battlemusic" type="AudioStreamPlayer" parent="." unique_id=773115307]
+stream = ExtResource("1_15h2t")
+volume_db = -30.0
+
+[node name="bossmusic" type="AudioStreamPlayer" parent="." unique_id=501336849]
+stream = ExtResource("2_wrb0n")
+volume_db = -40.0
+
+[node name="menumusic" type="AudioStreamPlayer" parent="." unique_id=2013162282]
+stream = ExtResource("4_ub75k")
+volume_db = -40.0

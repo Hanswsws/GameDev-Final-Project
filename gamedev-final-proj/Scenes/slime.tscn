@@ -41,17 +41,9 @@ region = Rect2(256, 512, 256, 256)
 atlas = ExtResource("2_f4si1")
 region = Rect2(512, 512, 256, 256)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vt4ob"]
-atlas = ExtResource("3_5gljc")
-region = Rect2(0, 0, 256, 256)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_hgeoe"]
 atlas = ExtResource("3_5gljc")
 region = Rect2(0, 256, 256, 256)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tk7xo"]
-atlas = ExtResource("3_5gljc")
-region = Rect2(0, 512, 256, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_scl1n"]
 atlas = ExtResource("4_vblni")
@@ -103,23 +95,17 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_m4x7e")
 }],
-"loop": true,
+"loop": false,
 "name": &"slime_death",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vt4ob")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_hgeoe")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tk7xo")
 }],
-"loop": true,
+"loop": false,
 "name": &"slime_hurt",
-"speed": 3.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -143,9 +129,12 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_iatxd"]
-radius = 60.133186
+radius = 59.008472
 
-[node name="slime" type="CharacterBody2D" unique_id=375481557 groups=["player"]]
+[sub_resource type="CircleShape2D" id="CircleShape2D_paq7w"]
+radius = 60.0
+
+[node name="slime" type="CharacterBody2D" unique_id=375481557]
 collision_layer = 3
 script = ExtResource("1_paq7w")
 
@@ -153,10 +142,19 @@ script = ExtResource("1_paq7w")
 position = Vector2(0, -2)
 rotation = -0.009856569
 sprite_frames = SubResource("SpriteFrames_7x82w")
-animation = &"slime_death"
+animation = &"slime_hurt"
 autoplay = "slime_walk"
-frame_progress = 0.09519665
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1197236787]
 position = Vector2(-8, -17)
 shape = SubResource("CircleShape2D_iatxd")
+
+[node name="attackarea" type="Area2D" parent="." unique_id=892502106]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attackarea" unique_id=804968074]
+position = Vector2(-8, -18)
+shape = SubResource("CircleShape2D_paq7w")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_entered" from="attackarea" to="." method="_on_attackarea_body_entered"]
+[connection signal="body_exited" from="attackarea" to="." method="_on_attackarea_body_exited"]
