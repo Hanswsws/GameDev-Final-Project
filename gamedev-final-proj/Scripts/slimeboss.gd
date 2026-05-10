@@ -3,9 +3,9 @@ extends CharacterBody2D
 @export var speed: float = 400.0
 @export var separation_radius: float = 80.0
 @export var separation_strength: float = 700.0
-@export var damage: int = 10
+@export var damage: int = 30
 @export var attack_cooldown: float = 1.0
-@export var max_health: int = 30
+@export var max_health: int = 200
 
 var can_attack := true
 var health: int
@@ -17,7 +17,7 @@ var player_in_range := false
 func _ready():
 	player = get_tree().get_first_node_in_group("player")
 	health = max_health
-	$AnimatedSprite2D.play("slime_walk")
+	$AnimatedSprite2D.play("slimeboss_walk")
 	
 func _physics_process(delta):
 	if player == null or dead:
@@ -76,7 +76,7 @@ func take_damage(amount):
 	print("Enemy health:", health)
 
 	# Play hurt animation
-	$AnimatedSprite2D.play("slime_hurt")
+	$AnimatedSprite2D.play("slimeboss_hurt")
 
 	if health <= 0:
 		die()
@@ -88,11 +88,11 @@ func die():
 	velocity = Vector2.ZERO
 
 	# Play death animation
-	$AnimatedSprite2D.play("slime_death")
+	$AnimatedSprite2D.play("slimeboss_death")
 
 	# Wait for animation to finish
 	await $AnimatedSprite2D.animation_finished
-	Gamemanager.add_score(50)
+	Gamemanager.add_score(100)
 
 	queue_free()
 	
@@ -100,17 +100,15 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 	if dead:
 		return
 
-	if $AnimatedSprite2D.animation == "slime_hurt":
-		$AnimatedSprite2D.play("slime_walk")
+	if $AnimatedSprite2D.animation == "slimeboss_hurt":
+		$AnimatedSprite2D.play("slimeboss_walk")
 
 
-func _on_attackarea_body_entered(body: Node2D) -> void:
+func _on_bossatkarea_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		player_in_range = true
-		
 
 
-
-func _on_attackarea_body_exited(body: Node2D) -> void:
+func _on_bossatkarea_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		player_in_range = false

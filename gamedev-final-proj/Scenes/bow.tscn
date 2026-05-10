@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://b1mgx34nboch"]
+
+[ext_resource type="Script" uid="uid://x6jlvwrgj3qv" path="res://Scripts/bow.gd" id="1_sas2l"]
+[ext_resource type="Texture2D" uid="uid://bcy5n73guhseg" path="res://GAME ASSETS/Bow(FINAL).png" id="2_3cct7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ju2r0"]
+atlas = ExtResource("2_3cct7")
+region = Rect2(0, 0, 526, 526)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sas2l"]
+atlas = ExtResource("2_3cct7")
+region = Rect2(0, 526, 526, 526)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vw0bs"]
+atlas = ExtResource("2_3cct7")
+region = Rect2(0, 1052, 526, 526)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mkdf0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ju2r0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sas2l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vw0bs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sas2l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ju2r0")
+}],
+"loop": false,
+"name": &"bowshoot",
+"speed": 10.0
+}]
+
+[node name="bow" type="Node2D" unique_id=651888397]
+script = ExtResource("1_sas2l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1187535880]
+position = Vector2(-9.000002, -1.0000005)
+rotation = 2.86234
+scale = Vector2(0.22629695, 0.19900109)
+sprite_frames = SubResource("SpriteFrames_mkdf0")
+animation = &"bowshoot"
+frame = 4
+frame_progress = 1.0
+
+[node name="Timer" type="Timer" parent="." unique_id=1741644353]
+wait_time = 2.0
+one_shot = true
+
+[node name="bowmarker" type="Marker2D" parent="." unique_id=502444155]
+position = Vector2(15, 10)
+gizmo_extents = 0.0

@@ -134,7 +134,7 @@ radius = 59.008472
 [sub_resource type="CircleShape2D" id="CircleShape2D_paq7w"]
 radius = 60.0
 
-[node name="slime" type="CharacterBody2D" unique_id=375481557]
+[node name="slime" type="CharacterBody2D" unique_id=375481557 groups=["enemies"]]
 collision_layer = 3
 script = ExtResource("1_paq7w")
 

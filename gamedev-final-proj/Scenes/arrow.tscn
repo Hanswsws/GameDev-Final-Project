@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://d4hh73eh7l3bl"]
+
+[ext_resource type="Texture2D" uid="uid://du5suu707vfc2" path="res://GAME ASSETS/Arrow (1).png" id="1_2u0bd"]
+[ext_resource type="Script" uid="uid://d2cvglgqmvdew" path="res://Scripts/arrow.gd" id="1_h5x2m"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_h5x2m"]
+a = Vector2(69, 0)
+b = Vector2(-42, 0)
+
+[node name="arrow" type="Area2D" unique_id=1776217715]
+collision_mask = 2
+script = ExtResource("1_h5x2m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1088385136]
+position = Vector2(-2, -3)
+rotation = -3.8920841
+scale = Vector2(0.59696996, 0.5677803)
+texture = ExtResource("1_2u0bd")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=693282527]
+visible = false
+position = Vector2(-75, -58)
+rect = Rect2(-74, -55, 299, 222)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1610271621]
+shape = SubResource("SegmentShape2D_h5x2m")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

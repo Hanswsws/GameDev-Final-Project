@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://dg1ucp3krjvil"]
+
+[ext_resource type="Script" uid="uid://blw3jhci68xmu" path="res://Scripts/slimeboss.gd" id="1_6noxn"]
+[ext_resource type="Texture2D" uid="uid://d2yor236mk2ca" path="res://GAME ASSETS/Slime_AndBossSlime(testing).png" id="1_ws32x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6noxn"]
+atlas = ExtResource("1_ws32x")
+region = Rect2(2100, 0, 700, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ioh26"]
+atlas = ExtResource("1_ws32x")
+region = Rect2(2800, 0, 700, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkwd7"]
+atlas = ExtResource("1_ws32x")
+region = Rect2(0, 0, 700, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b1wa5"]
+atlas = ExtResource("1_ws32x")
+region = Rect2(700, 0, 700, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jodbv"]
+atlas = ExtResource("1_ws32x")
+region = Rect2(1400, 0, 700, 700)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mqpdy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6noxn")
+}],
+"loop": false,
+"name": &"slimeboss_death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ioh26")
+}],
+"loop": false,
+"name": &"slimeboss_hurt",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkwd7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b1wa5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jodbv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b1wa5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkwd7")
+}],
+"loop": true,
+"name": &"slimeboss_walk",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6xjbc"]
+radius = 132.01515
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y3qf4"]
+radius = 154.05194
+
+[node name="slimeboss" type="CharacterBody2D" unique_id=1595071957 groups=["enemies"]]
+collision_layer = 3
+script = ExtResource("1_6noxn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=109426706]
+position = Vector2(-1.9999962, 7.999996)
+scale = Vector2(0.6271429, 0.55)
+sprite_frames = SubResource("SpriteFrames_mqpdy")
+animation = &"slimeboss_hurt"
+autoplay = "slimeboss_walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1688234581 groups=["enemies"]]
+position = Vector2(2, 6)
+shape = SubResource("CircleShape2D_6xjbc")
+
+[node name="bossatkarea" type="Area2D" parent="." unique_id=1469007888]
+position = Vector2(2, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bossatkarea" unique_id=1501881720]
+position = Vector2(1, 2)
+shape = SubResource("CircleShape2D_y3qf4")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_entered" from="bossatkarea" to="." method="_on_bossatkarea_body_entered"]
+[connection signal="body_exited" from="bossatkarea" to="." method="_on_bossatkarea_body_exited"]

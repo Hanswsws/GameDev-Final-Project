@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://fpkg70iedo6s"]
+
+[ext_resource type="Script" uid="uid://u173bugud0vf" path="res://Scripts/slimeboss_spawner.gd" id="1_ese47"]
+[ext_resource type="PackedScene" uid="uid://dg1ucp3krjvil" path="res://Scenes/slimeboss.tscn" id="2_apcb2"]
+
+[node name="slimeboss_spawner" type="Node2D" unique_id=1586008059 node_paths=PackedStringArray("player") groups=["player"]]
+script = ExtResource("1_ese47")
+enemy_scene = ExtResource("2_apcb2")
+player = NodePath(".")

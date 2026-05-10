@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://csrrsm4452wfy" path="res://Scenes/player.tscn" id="1_ury6q"]
 [ext_resource type="PackedScene" uid="uid://camirrwjf4p5i" path="res://Scenes/slime_spawner.tscn" id="3_c7vku"]
 [ext_resource type="PackedScene" uid="uid://k21bepoh05dr" path="res://Scenes/hud.tscn" id="4_jnk7d"]
+[ext_resource type="PackedScene" uid="uid://fpkg70iedo6s" path="res://Scenes/slimeboss_spawner.tscn" id="5_wevws"]
+[ext_resource type="PackedScene" uid="uid://bb2sshvt0b7dv" path="res://Scenes/score.tscn" id="6_tiucm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ht2io"]
 texture = ExtResource("1_ht2io")
@@ -4275,3 +4277,8 @@ position = Vector2(-2241, 1596)
 position = Vector2(-2241, -1527)
 
 [node name="HUD" parent="." unique_id=870673987 groups=["hud"] instance=ExtResource("4_jnk7d")]
+
+[node name="slimeboss_spawner" parent="." unique_id=1586008059 instance=ExtResource("5_wevws")]
+position = Vector2(3713, -50)
+
+[node name="score" parent="." unique_id=1570933945 instance=ExtResource("6_tiucm")]
