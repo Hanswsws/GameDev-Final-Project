@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="gamedev_FinalProj"
-run/main_scene="uid://btkppphhr0pj5"
+run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Musicmanager="*uid://dghyttwjk63n"
 Gamemanager="*uid://cripegqlmcnis"
+SaveSystem="*uid://cfgj2bf1y71me"
 
 [display]
 

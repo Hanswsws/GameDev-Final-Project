@@ -1,10 +1,9 @@
-[gd_scene format=3 uid="uid://btkppphhr0pj5"]
+[gd_scene format=3 uid="uid://bemh254x6pd6r"]
 
 [ext_resource type="Script" uid="uid://b4wks6xomh0cs" path="res://Scripts/main_menu.gd" id="1_28flt"]
 [ext_resource type="Theme" uid="uid://vd3vpjodq4vi" path="res://arena_theme.tres" id="1_48xlc"]
-[ext_resource type="AudioStream" uid="uid://3cacbb7g2bot" path="res://GAME ASSETS/sfx/menuclicksandsounds_not_amasingrock.mp3" id="3_1ehe0"]
 
-[node name="MainMenu" type="Control" unique_id=1124488915]
+[node name="MainMenu" type="Control" unique_id=2122114387]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -14,7 +13,7 @@ grow_vertical = 2
 theme = ExtResource("1_48xlc")
 script = ExtResource("1_28flt")
 
-[node name="BG" type="ColorRect" parent="." unique_id=1023019496]
+[node name="BG" type="ColorRect" parent="." unique_id=1071451106]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -23,1469 +22,830 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.1, 0.09, 0.08, 1)
 
-[node name="TileRow1" type="HBoxContainer" parent="." unique_id=1703053292]
+[node name="TileRow1" type="HBoxContainer" parent="." unique_id=1534303487]
 layout_mode = 0
 offset_right = 1280.0
-offset_bottom = 47.0
+offset_bottom = 90.0
 theme_override_constants/separation = 1
 
-[node name="T1" type="ColorRect" parent="TileRow1" unique_id=768827800]
+[node name="T1" type="ColorRect" parent="TileRow1" unique_id=333681844]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.17, 0.16, 0.15, 1)
 
-[node name="T2" type="ColorRect" parent="TileRow1" unique_id=777674090]
+[node name="T2" type="ColorRect" parent="TileRow1" unique_id=1868671978]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T3" type="ColorRect" parent="TileRow1" unique_id=350906682]
+[node name="T3" type="ColorRect" parent="TileRow1" unique_id=1171794475]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T4" type="ColorRect" parent="TileRow1" unique_id=818205024]
+[node name="T4" type="ColorRect" parent="TileRow1" unique_id=158972702]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T5" type="ColorRect" parent="TileRow1" unique_id=381546919]
+[node name="T5" type="ColorRect" parent="TileRow1" unique_id=1108622828]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.18, 0.17, 0.16, 1)
 
-[node name="T6" type="ColorRect" parent="TileRow1" unique_id=711973128]
+[node name="T6" type="ColorRect" parent="TileRow1" unique_id=229981022]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T7" type="ColorRect" parent="TileRow1" unique_id=1545150991]
+[node name="T7" type="ColorRect" parent="TileRow1" unique_id=249410874]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T8" type="ColorRect" parent="TileRow1" unique_id=1369348887]
+[node name="T8" type="ColorRect" parent="TileRow1" unique_id=815538008]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.16, 0.15, 0.14, 1)
 
-[node name="T9" type="ColorRect" parent="TileRow1" unique_id=1607121148]
+[node name="T9" type="ColorRect" parent="TileRow1" unique_id=203440993]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T10" type="ColorRect" parent="TileRow1" unique_id=663235876]
+[node name="T10" type="ColorRect" parent="TileRow1" unique_id=61036042]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T11" type="ColorRect" parent="TileRow1" unique_id=365918454]
+[node name="T11" type="ColorRect" parent="TileRow1" unique_id=1437816080]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.17, 0.16, 0.15, 1)
 
-[node name="T12" type="ColorRect" parent="TileRow1" unique_id=612387175]
+[node name="T12" type="ColorRect" parent="TileRow1" unique_id=1563860832]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T13" type="ColorRect" parent="TileRow1" unique_id=1956278317]
+[node name="T13" type="ColorRect" parent="TileRow1" unique_id=1380149166]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T14" type="ColorRect" parent="TileRow1" unique_id=1253176744]
+[node name="T14" type="ColorRect" parent="TileRow1" unique_id=1601213868]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T15" type="ColorRect" parent="TileRow1" unique_id=1942110816]
+[node name="T15" type="ColorRect" parent="TileRow1" unique_id=1929493545]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.18, 0.17, 0.16, 1)
 
-[node name="T16" type="ColorRect" parent="TileRow1" unique_id=1010618409]
+[node name="T16" type="ColorRect" parent="TileRow1" unique_id=1627671628]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T17" type="ColorRect" parent="TileRow1" unique_id=639439276]
+[node name="T17" type="ColorRect" parent="TileRow1" unique_id=216623724]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T18" type="ColorRect" parent="TileRow1" unique_id=1353651940]
+[node name="T18" type="ColorRect" parent="TileRow1" unique_id=495733940]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.16, 0.15, 0.14, 1)
 
-[node name="T19" type="ColorRect" parent="TileRow1" unique_id=344442628]
+[node name="T19" type="ColorRect" parent="TileRow1" unique_id=762173548]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T20" type="ColorRect" parent="TileRow1" unique_id=1705807338]
+[node name="T20" type="ColorRect" parent="TileRow1" unique_id=230532790]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="TileRow2" type="HBoxContainer" parent="." unique_id=384744783]
+[node name="TileRow2" type="HBoxContainer" parent="." unique_id=378095982]
 layout_mode = 0
-offset_top = 48.0
+offset_top = 90.0
 offset_right = 1280.0
-offset_bottom = 95.0
+offset_bottom = 180.0
 theme_override_constants/separation = 1
 
-[node name="T1" type="ColorRect" parent="TileRow2" unique_id=884816876]
+[node name="T1" type="ColorRect" parent="TileRow2" unique_id=1314940576]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T2" type="ColorRect" parent="TileRow2" unique_id=1690310536]
+[node name="T2" type="ColorRect" parent="TileRow2" unique_id=1100515876]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T3" type="ColorRect" parent="TileRow2" unique_id=1213791699]
+[node name="T3" type="ColorRect" parent="TileRow2" unique_id=71774861]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.16, 0.15, 0.14, 1)
 
-[node name="T4" type="ColorRect" parent="TileRow2" unique_id=690977175]
+[node name="T4" type="ColorRect" parent="TileRow2" unique_id=1992054180]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T5" type="ColorRect" parent="TileRow2" unique_id=1135391317]
+[node name="T5" type="ColorRect" parent="TileRow2" unique_id=272931646]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T6" type="ColorRect" parent="TileRow2" unique_id=838352433]
+[node name="T6" type="ColorRect" parent="TileRow2" unique_id=533063947]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.18, 0.17, 0.16, 1)
 
-[node name="T7" type="ColorRect" parent="TileRow2" unique_id=1161132074]
+[node name="T7" type="ColorRect" parent="TileRow2" unique_id=95118959]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T8" type="ColorRect" parent="TileRow2" unique_id=2005866100]
+[node name="T8" type="ColorRect" parent="TileRow2" unique_id=275205913]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T9" type="ColorRect" parent="TileRow2" unique_id=269146459]
+[node name="T9" type="ColorRect" parent="TileRow2" unique_id=1740962097]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.17, 0.16, 0.15, 1)
 
-[node name="T10" type="ColorRect" parent="TileRow2" unique_id=433503123]
+[node name="T10" type="ColorRect" parent="TileRow2" unique_id=1395508074]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T11" type="ColorRect" parent="TileRow2" unique_id=799655527]
+[node name="T11" type="ColorRect" parent="TileRow2" unique_id=1786390477]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T12" type="ColorRect" parent="TileRow2" unique_id=521359127]
+[node name="T12" type="ColorRect" parent="TileRow2" unique_id=1923373318]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T13" type="ColorRect" parent="TileRow2" unique_id=44588016]
+[node name="T13" type="ColorRect" parent="TileRow2" unique_id=901106129]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.18, 0.17, 0.16, 1)
 
-[node name="T14" type="ColorRect" parent="TileRow2" unique_id=1541262167]
+[node name="T14" type="ColorRect" parent="TileRow2" unique_id=1252245015]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T15" type="ColorRect" parent="TileRow2" unique_id=1892065250]
+[node name="T15" type="ColorRect" parent="TileRow2" unique_id=389462176]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T16" type="ColorRect" parent="TileRow2" unique_id=626389719]
+[node name="T16" type="ColorRect" parent="TileRow2" unique_id=705557249]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T17" type="ColorRect" parent="TileRow2" unique_id=192673434]
+[node name="T17" type="ColorRect" parent="TileRow2" unique_id=956137522]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T18" type="ColorRect" parent="TileRow2" unique_id=1230087462]
+[node name="T18" type="ColorRect" parent="TileRow2" unique_id=1598649372]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.16, 0.15, 0.14, 1)
 
-[node name="T19" type="ColorRect" parent="TileRow2" unique_id=277608175]
+[node name="T19" type="ColorRect" parent="TileRow2" unique_id=2003654428]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T20" type="ColorRect" parent="TileRow2" unique_id=1305699026]
+[node name="T20" type="ColorRect" parent="TileRow2" unique_id=710192078]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="TileRow3" type="HBoxContainer" parent="." unique_id=976328261]
+[node name="TileRow3" type="HBoxContainer" parent="." unique_id=984948155]
 layout_mode = 0
-offset_top = 96.0
+offset_top = 180.0
 offset_right = 1280.0
-offset_bottom = 143.0
+offset_bottom = 270.0
 theme_override_constants/separation = 1
 
-[node name="T1" type="ColorRect" parent="TileRow3" unique_id=1353572764]
+[node name="T1" type="ColorRect" parent="TileRow3" unique_id=823374080]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T2" type="ColorRect" parent="TileRow3" unique_id=177949372]
+[node name="T2" type="ColorRect" parent="TileRow3" unique_id=214561814]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T3" type="ColorRect" parent="TileRow3" unique_id=505163720]
+[node name="T3" type="ColorRect" parent="TileRow3" unique_id=1770263589]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.17, 0.16, 0.15, 1)
 
-[node name="T4" type="ColorRect" parent="TileRow3" unique_id=205848228]
+[node name="T4" type="ColorRect" parent="TileRow3" unique_id=1228855171]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T5" type="ColorRect" parent="TileRow3" unique_id=1118095296]
+[node name="T5" type="ColorRect" parent="TileRow3" unique_id=1657834135]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T6" type="ColorRect" parent="TileRow3" unique_id=928208900]
+[node name="T6" type="ColorRect" parent="TileRow3" unique_id=1358056356]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T7" type="ColorRect" parent="TileRow3" unique_id=1727833898]
+[node name="T7" type="ColorRect" parent="TileRow3" unique_id=1085854709]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T8" type="ColorRect" parent="TileRow3" unique_id=395099309]
+[node name="T8" type="ColorRect" parent="TileRow3" unique_id=1813968468]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T9" type="ColorRect" parent="TileRow3" unique_id=804624317]
+[node name="T9" type="ColorRect" parent="TileRow3" unique_id=375951738]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.18, 0.17, 0.16, 1)
 
-[node name="T10" type="ColorRect" parent="TileRow3" unique_id=829162659]
+[node name="T10" type="ColorRect" parent="TileRow3" unique_id=1712166223]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.16, 0.15, 0.14, 1)
 
-[node name="T11" type="ColorRect" parent="TileRow3" unique_id=1764494129]
+[node name="T11" type="ColorRect" parent="TileRow3" unique_id=1361485687]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T12" type="ColorRect" parent="TileRow3" unique_id=586787190]
+[node name="T12" type="ColorRect" parent="TileRow3" unique_id=30243166]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T13" type="ColorRect" parent="TileRow3" unique_id=2072332984]
+[node name="T13" type="ColorRect" parent="TileRow3" unique_id=2115905391]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T14" type="ColorRect" parent="TileRow3" unique_id=1022787533]
+[node name="T14" type="ColorRect" parent="TileRow3" unique_id=1067739364]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.17, 0.16, 0.15, 1)
 
-[node name="T15" type="ColorRect" parent="TileRow3" unique_id=1321517]
+[node name="T15" type="ColorRect" parent="TileRow3" unique_id=659930993]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T16" type="ColorRect" parent="TileRow3" unique_id=1008625526]
+[node name="T16" type="ColorRect" parent="TileRow3" unique_id=587944311]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T17" type="ColorRect" parent="TileRow3" unique_id=1470167882]
+[node name="T17" type="ColorRect" parent="TileRow3" unique_id=1679822632]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.18, 0.17, 0.16, 1)
 
-[node name="T18" type="ColorRect" parent="TileRow3" unique_id=908607381]
+[node name="T18" type="ColorRect" parent="TileRow3" unique_id=1665429228]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T19" type="ColorRect" parent="TileRow3" unique_id=362047946]
+[node name="T19" type="ColorRect" parent="TileRow3" unique_id=1225745521]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T20" type="ColorRect" parent="TileRow3" unique_id=1182557129]
+[node name="T20" type="ColorRect" parent="TileRow3" unique_id=1692170658]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.16, 0.15, 0.14, 1)
 
-[node name="TileRow4" type="HBoxContainer" parent="." unique_id=1323960869]
+[node name="TileRow4" type="HBoxContainer" parent="." unique_id=1846747935]
 layout_mode = 0
-offset_top = 144.0
+offset_top = 270.0
 offset_right = 1280.0
-offset_bottom = 191.0
+offset_bottom = 360.0
 theme_override_constants/separation = 1
 
-[node name="T1" type="ColorRect" parent="TileRow4" unique_id=890295270]
+[node name="T1" type="ColorRect" parent="TileRow4" unique_id=2057610679]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T2" type="ColorRect" parent="TileRow4" unique_id=1875430884]
+[node name="T2" type="ColorRect" parent="TileRow4" unique_id=1912893253]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T3" type="ColorRect" parent="TileRow4" unique_id=1071142375]
+[node name="T3" type="ColorRect" parent="TileRow4" unique_id=1140861541]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T4" type="ColorRect" parent="TileRow4" unique_id=693868799]
+[node name="T4" type="ColorRect" parent="TileRow4" unique_id=1644060964]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.18, 0.17, 0.16, 1)
 
-[node name="T5" type="ColorRect" parent="TileRow4" unique_id=1489671155]
+[node name="T5" type="ColorRect" parent="TileRow4" unique_id=1856773592]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.16, 0.15, 0.14, 1)
 
-[node name="T6" type="ColorRect" parent="TileRow4" unique_id=409055990]
+[node name="T6" type="ColorRect" parent="TileRow4" unique_id=1929901273]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T7" type="ColorRect" parent="TileRow4" unique_id=1881382224]
+[node name="T7" type="ColorRect" parent="TileRow4" unique_id=1638782528]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T8" type="ColorRect" parent="TileRow4" unique_id=949229758]
+[node name="T8" type="ColorRect" parent="TileRow4" unique_id=1203600790]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T9" type="ColorRect" parent="TileRow4" unique_id=17978833]
+[node name="T9" type="ColorRect" parent="TileRow4" unique_id=1647121915]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T10" type="ColorRect" parent="TileRow4" unique_id=997167031]
+[node name="T10" type="ColorRect" parent="TileRow4" unique_id=1675946301]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.17, 0.16, 0.15, 1)
 
-[node name="T11" type="ColorRect" parent="TileRow4" unique_id=1514647520]
+[node name="T11" type="ColorRect" parent="TileRow4" unique_id=1800140583]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T12" type="ColorRect" parent="TileRow4" unique_id=264396413]
+[node name="T12" type="ColorRect" parent="TileRow4" unique_id=1750143949]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T13" type="ColorRect" parent="TileRow4" unique_id=72522586]
+[node name="T13" type="ColorRect" parent="TileRow4" unique_id=996527592]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T14" type="ColorRect" parent="TileRow4" unique_id=425885585]
+[node name="T14" type="ColorRect" parent="TileRow4" unique_id=950712551]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T15" type="ColorRect" parent="TileRow4" unique_id=1036942413]
+[node name="T15" type="ColorRect" parent="TileRow4" unique_id=1588743295]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T16" type="ColorRect" parent="TileRow4" unique_id=1297252723]
+[node name="T16" type="ColorRect" parent="TileRow4" unique_id=1529793190]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T17" type="ColorRect" parent="TileRow4" unique_id=1006502376]
+[node name="T17" type="ColorRect" parent="TileRow4" unique_id=116998080]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.16, 0.15, 0.14, 1)
 
-[node name="T18" type="ColorRect" parent="TileRow4" unique_id=1728487961]
+[node name="T18" type="ColorRect" parent="TileRow4" unique_id=596381673]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.18, 0.17, 0.16, 1)
 
-[node name="T19" type="ColorRect" parent="TileRow4" unique_id=1072591529]
+[node name="T19" type="ColorRect" parent="TileRow4" unique_id=1214696449]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T20" type="ColorRect" parent="TileRow4" unique_id=292709850]
+[node name="T20" type="ColorRect" parent="TileRow4" unique_id=972472580]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="TileRow5" type="HBoxContainer" parent="." unique_id=322090432]
+[node name="TileRow5" type="HBoxContainer" parent="." unique_id=1514563997]
 layout_mode = 0
-offset_top = 192.0
+offset_top = 360.0
 offset_right = 1280.0
-offset_bottom = 239.0
+offset_bottom = 450.0
 theme_override_constants/separation = 1
 
-[node name="T1" type="ColorRect" parent="TileRow5" unique_id=137385063]
+[node name="T1" type="ColorRect" parent="TileRow5" unique_id=536158158]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T2" type="ColorRect" parent="TileRow5" unique_id=376815243]
+[node name="T2" type="ColorRect" parent="TileRow5" unique_id=1518030539]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T3" type="ColorRect" parent="TileRow5" unique_id=1913338206]
+[node name="T3" type="ColorRect" parent="TileRow5" unique_id=890259934]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T4" type="ColorRect" parent="TileRow5" unique_id=1214017569]
+[node name="T4" type="ColorRect" parent="TileRow5" unique_id=672728964]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T5" type="ColorRect" parent="TileRow5" unique_id=1649074075]
+[node name="T5" type="ColorRect" parent="TileRow5" unique_id=709913173]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.17, 0.16, 0.15, 1)
 
-[node name="T6" type="ColorRect" parent="TileRow5" unique_id=322183350]
+[node name="T6" type="ColorRect" parent="TileRow5" unique_id=1453487189]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T7" type="ColorRect" parent="TileRow5" unique_id=2129352089]
+[node name="T7" type="ColorRect" parent="TileRow5" unique_id=922630165]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T8" type="ColorRect" parent="TileRow5" unique_id=665281795]
+[node name="T8" type="ColorRect" parent="TileRow5" unique_id=1414867479]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.16, 0.15, 0.14, 1)
 
-[node name="T9" type="ColorRect" parent="TileRow5" unique_id=590769477]
+[node name="T9" type="ColorRect" parent="TileRow5" unique_id=644095324]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T10" type="ColorRect" parent="TileRow5" unique_id=1899112807]
+[node name="T10" type="ColorRect" parent="TileRow5" unique_id=454166244]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T11" type="ColorRect" parent="TileRow5" unique_id=1381447567]
+[node name="T11" type="ColorRect" parent="TileRow5" unique_id=285514905]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T12" type="ColorRect" parent="TileRow5" unique_id=1218532192]
+[node name="T12" type="ColorRect" parent="TileRow5" unique_id=1852457123]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T13" type="ColorRect" parent="TileRow5" unique_id=1778511196]
+[node name="T13" type="ColorRect" parent="TileRow5" unique_id=2136633106]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.17, 0.16, 0.15, 1)
 
-[node name="T14" type="ColorRect" parent="TileRow5" unique_id=965023018]
+[node name="T14" type="ColorRect" parent="TileRow5" unique_id=1539991141]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T15" type="ColorRect" parent="TileRow5" unique_id=1770589229]
+[node name="T15" type="ColorRect" parent="TileRow5" unique_id=690591983]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T16" type="ColorRect" parent="TileRow5" unique_id=1766260506]
+[node name="T16" type="ColorRect" parent="TileRow5" unique_id=355623707]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T17" type="ColorRect" parent="TileRow5" unique_id=2010115565]
+[node name="T17" type="ColorRect" parent="TileRow5" unique_id=1701291346]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T18" type="ColorRect" parent="TileRow5" unique_id=201589397]
+[node name="T18" type="ColorRect" parent="TileRow5" unique_id=1556806197]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T19" type="ColorRect" parent="TileRow5" unique_id=2049786680]
+[node name="T19" type="ColorRect" parent="TileRow5" unique_id=1759578370]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.16, 0.15, 0.14, 1)
 
-[node name="T20" type="ColorRect" parent="TileRow5" unique_id=1912610816]
+[node name="T20" type="ColorRect" parent="TileRow5" unique_id=450162238]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="TileRow6" type="HBoxContainer" parent="." unique_id=2083442223]
+[node name="TileRow6" type="HBoxContainer" parent="." unique_id=1752880814]
 layout_mode = 0
-offset_top = 240.0
+offset_top = 450.0
 offset_right = 1280.0
-offset_bottom = 287.0
+offset_bottom = 540.0
 theme_override_constants/separation = 1
 
-[node name="T1" type="ColorRect" parent="TileRow6" unique_id=1735155441]
+[node name="T1" type="ColorRect" parent="TileRow6" unique_id=745417720]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T2" type="ColorRect" parent="TileRow6" unique_id=261534249]
+[node name="T2" type="ColorRect" parent="TileRow6" unique_id=2031725426]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.18, 0.17, 0.16, 1)
 
-[node name="T3" type="ColorRect" parent="TileRow6" unique_id=1180346778]
+[node name="T3" type="ColorRect" parent="TileRow6" unique_id=419605448]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T4" type="ColorRect" parent="TileRow6" unique_id=654297425]
+[node name="T4" type="ColorRect" parent="TileRow6" unique_id=281876921]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T5" type="ColorRect" parent="TileRow6" unique_id=1780824565]
+[node name="T5" type="ColorRect" parent="TileRow6" unique_id=784954155]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T6" type="ColorRect" parent="TileRow6" unique_id=1512559766]
+[node name="T6" type="ColorRect" parent="TileRow6" unique_id=1832281456]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T7" type="ColorRect" parent="TileRow6" unique_id=1345782427]
+[node name="T7" type="ColorRect" parent="TileRow6" unique_id=777317567]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T8" type="ColorRect" parent="TileRow6" unique_id=911591144]
+[node name="T8" type="ColorRect" parent="TileRow6" unique_id=419548713]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T9" type="ColorRect" parent="TileRow6" unique_id=1203231723]
+[node name="T9" type="ColorRect" parent="TileRow6" unique_id=929912432]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.16, 0.15, 0.14, 1)
 
-[node name="T10" type="ColorRect" parent="TileRow6" unique_id=1266421648]
+[node name="T10" type="ColorRect" parent="TileRow6" unique_id=485620856]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T11" type="ColorRect" parent="TileRow6" unique_id=1022760725]
+[node name="T11" type="ColorRect" parent="TileRow6" unique_id=370012265]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.18, 0.17, 0.16, 1)
 
-[node name="T12" type="ColorRect" parent="TileRow6" unique_id=1890106272]
+[node name="T12" type="ColorRect" parent="TileRow6" unique_id=1730366074]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T13" type="ColorRect" parent="TileRow6" unique_id=295444811]
+[node name="T13" type="ColorRect" parent="TileRow6" unique_id=1172047588]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T14" type="ColorRect" parent="TileRow6" unique_id=1295682499]
+[node name="T14" type="ColorRect" parent="TileRow6" unique_id=1115529246]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T15" type="ColorRect" parent="TileRow6" unique_id=510165500]
+[node name="T15" type="ColorRect" parent="TileRow6" unique_id=696014121]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.17, 0.16, 0.15, 1)
 
-[node name="T16" type="ColorRect" parent="TileRow6" unique_id=330168104]
+[node name="T16" type="ColorRect" parent="TileRow6" unique_id=782617741]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T17" type="ColorRect" parent="TileRow6" unique_id=1405522016]
+[node name="T17" type="ColorRect" parent="TileRow6" unique_id=1384936316]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T18" type="ColorRect" parent="TileRow6" unique_id=1069250564]
+[node name="T18" type="ColorRect" parent="TileRow6" unique_id=469923474]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T19" type="ColorRect" parent="TileRow6" unique_id=103684240]
+[node name="T19" type="ColorRect" parent="TileRow6" unique_id=921470791]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T20" type="ColorRect" parent="TileRow6" unique_id=1080386779]
+[node name="T20" type="ColorRect" parent="TileRow6" unique_id=825778541]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="TileRow7" type="HBoxContainer" parent="." unique_id=722648235]
+[node name="TileRow7" type="HBoxContainer" parent="." unique_id=117700874]
 layout_mode = 0
-offset_top = 288.0
+offset_top = 540.0
 offset_right = 1280.0
-offset_bottom = 335.0
+offset_bottom = 630.0
 theme_override_constants/separation = 1
 
-[node name="T1" type="ColorRect" parent="TileRow7" unique_id=434541361]
+[node name="T1" type="ColorRect" parent="TileRow7" unique_id=1003397289]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.17, 0.16, 0.15, 1)
 
-[node name="T2" type="ColorRect" parent="TileRow7" unique_id=1696201094]
+[node name="T2" type="ColorRect" parent="TileRow7" unique_id=1798878276]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T3" type="ColorRect" parent="TileRow7" unique_id=485213736]
+[node name="T3" type="ColorRect" parent="TileRow7" unique_id=911569472]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T4" type="ColorRect" parent="TileRow7" unique_id=1045940560]
+[node name="T4" type="ColorRect" parent="TileRow7" unique_id=1395111568]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T5" type="ColorRect" parent="TileRow7" unique_id=723761200]
+[node name="T5" type="ColorRect" parent="TileRow7" unique_id=466515846]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T6" type="ColorRect" parent="TileRow7" unique_id=698865812]
+[node name="T6" type="ColorRect" parent="TileRow7" unique_id=1637630078]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T7" type="ColorRect" parent="TileRow7" unique_id=1267256459]
+[node name="T7" type="ColorRect" parent="TileRow7" unique_id=1303641971]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.18, 0.17, 0.16, 1)
 
-[node name="T8" type="ColorRect" parent="TileRow7" unique_id=1427812488]
+[node name="T8" type="ColorRect" parent="TileRow7" unique_id=508939147]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T9" type="ColorRect" parent="TileRow7" unique_id=294211232]
+[node name="T9" type="ColorRect" parent="TileRow7" unique_id=1547418179]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.2, 0.19, 0.18, 1)
 
-[node name="T10" type="ColorRect" parent="TileRow7" unique_id=1648666087]
+[node name="T10" type="ColorRect" parent="TileRow7" unique_id=1099424681]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T11" type="ColorRect" parent="TileRow7" unique_id=255387727]
+[node name="T11" type="ColorRect" parent="TileRow7" unique_id=1836109661]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.16, 0.15, 0.14, 1)
 
-[node name="T12" type="ColorRect" parent="TileRow7" unique_id=1571456954]
+[node name="T12" type="ColorRect" parent="TileRow7" unique_id=70680487]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T13" type="ColorRect" parent="TileRow7" unique_id=1058665043]
+[node name="T13" type="ColorRect" parent="TileRow7" unique_id=1086472446]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.14, 0.13, 0.12, 1)
 
-[node name="T14" type="ColorRect" parent="TileRow7" unique_id=1784942936]
+[node name="T14" type="ColorRect" parent="TileRow7" unique_id=1199286258]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T15" type="ColorRect" parent="TileRow7" unique_id=832814586]
+[node name="T15" type="ColorRect" parent="TileRow7" unique_id=49626309]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.19, 0.18, 0.17, 1)
 
-[node name="T16" type="ColorRect" parent="TileRow7" unique_id=247085259]
+[node name="T16" type="ColorRect" parent="TileRow7" unique_id=1341474802]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.17, 0.16, 0.15, 1)
 
-[node name="T17" type="ColorRect" parent="TileRow7" unique_id=1994089743]
+[node name="T17" type="ColorRect" parent="TileRow7" unique_id=1775053688]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.13, 0.12, 0.11, 1)
 
-[node name="T18" type="ColorRect" parent="TileRow7" unique_id=1544470729]
+[node name="T18" type="ColorRect" parent="TileRow7" unique_id=414722746]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.21, 0.2, 0.19, 1)
 
-[node name="T19" type="ColorRect" parent="TileRow7" unique_id=1493377877]
+[node name="T19" type="ColorRect" parent="TileRow7" unique_id=1610392671]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.15, 0.14, 0.13, 1)
 
-[node name="T20" type="ColorRect" parent="TileRow7" unique_id=969901609]
+[node name="T20" type="ColorRect" parent="TileRow7" unique_id=86476102]
 custom_minimum_size = Vector2(63, 46)
 layout_mode = 2
 color = Color(0.18, 0.17, 0.16, 1)
 
-[node name="TileRow8" type="HBoxContainer" parent="." unique_id=501930188]
-layout_mode = 0
-offset_top = 336.0
-offset_right = 1280.0
-offset_bottom = 383.0
-theme_override_constants/separation = 1
-
-[node name="T1" type="ColorRect" parent="TileRow8" unique_id=1830218630]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.14, 0.13, 0.12, 1)
-
-[node name="T2" type="ColorRect" parent="TileRow8" unique_id=910422012]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.19, 0.18, 0.17, 1)
-
-[node name="T3" type="ColorRect" parent="TileRow8" unique_id=430491141]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T4" type="ColorRect" parent="TileRow8" unique_id=815706142]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.17, 0.16, 0.15, 1)
-
-[node name="T5" type="ColorRect" parent="TileRow8" unique_id=2047051354]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T6" type="ColorRect" parent="TileRow8" unique_id=1609887897]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.15, 0.14, 0.13, 1)
-
-[node name="T7" type="ColorRect" parent="TileRow8" unique_id=1286503007]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T8" type="ColorRect" parent="TileRow8" unique_id=433004439]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.2, 0.19, 0.18, 1)
-
-[node name="T9" type="ColorRect" parent="TileRow8" unique_id=1820352654]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.16, 0.15, 0.14, 1)
-
-[node name="T10" type="ColorRect" parent="TileRow8" unique_id=1972540693]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.14, 0.13, 0.12, 1)
-
-[node name="T11" type="ColorRect" parent="TileRow8" unique_id=521690755]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T12" type="ColorRect" parent="TileRow8" unique_id=244302769]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.19, 0.18, 0.17, 1)
-
-[node name="T13" type="ColorRect" parent="TileRow8" unique_id=800539930]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T14" type="ColorRect" parent="TileRow8" unique_id=653188461]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T15" type="ColorRect" parent="TileRow8" unique_id=1481988559]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.18, 0.17, 0.16, 1)
-
-[node name="T16" type="ColorRect" parent="TileRow8" unique_id=220912659]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.14, 0.13, 0.12, 1)
-
-[node name="T17" type="ColorRect" parent="TileRow8" unique_id=1574941604]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.2, 0.19, 0.18, 1)
-
-[node name="T18" type="ColorRect" parent="TileRow8" unique_id=1484245299]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T19" type="ColorRect" parent="TileRow8" unique_id=732318929]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.17, 0.16, 0.15, 1)
-
-[node name="T20" type="ColorRect" parent="TileRow8" unique_id=2101989185]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.15, 0.14, 0.13, 1)
-
-[node name="TileRow9" type="HBoxContainer" parent="." unique_id=1459809572]
-layout_mode = 0
-offset_top = 384.0
-offset_right = 1280.0
-offset_bottom = 431.0
-theme_override_constants/separation = 1
-
-[node name="T1" type="ColorRect" parent="TileRow9" unique_id=824749061]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T2" type="ColorRect" parent="TileRow9" unique_id=693254453]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T3" type="ColorRect" parent="TileRow9" unique_id=1274358527]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.16, 0.15, 0.14, 1)
-
-[node name="T4" type="ColorRect" parent="TileRow9" unique_id=1259737734]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.2, 0.19, 0.18, 1)
-
-[node name="T5" type="ColorRect" parent="TileRow9" unique_id=1724008661]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T6" type="ColorRect" parent="TileRow9" unique_id=178590956]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.18, 0.17, 0.16, 1)
-
-[node name="T7" type="ColorRect" parent="TileRow9" unique_id=431854944]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.14, 0.13, 0.12, 1)
-
-[node name="T8" type="ColorRect" parent="TileRow9" unique_id=1656521296]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T9" type="ColorRect" parent="TileRow9" unique_id=2039361716]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.19, 0.18, 0.17, 1)
-
-[node name="T10" type="ColorRect" parent="TileRow9" unique_id=1203947092]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.17, 0.16, 0.15, 1)
-
-[node name="T11" type="ColorRect" parent="TileRow9" unique_id=1243018582]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T12" type="ColorRect" parent="TileRow9" unique_id=1371404560]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T13" type="ColorRect" parent="TileRow9" unique_id=702163801]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.15, 0.14, 0.13, 1)
-
-[node name="T14" type="ColorRect" parent="TileRow9" unique_id=1097211740]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.19, 0.18, 0.17, 1)
-
-[node name="T15" type="ColorRect" parent="TileRow9" unique_id=1841430034]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T16" type="ColorRect" parent="TileRow9" unique_id=388370508]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.2, 0.19, 0.18, 1)
-
-[node name="T17" type="ColorRect" parent="TileRow9" unique_id=1745928187]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.16, 0.15, 0.14, 1)
-
-[node name="T18" type="ColorRect" parent="TileRow9" unique_id=864043863]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T19" type="ColorRect" parent="TileRow9" unique_id=1997997076]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.18, 0.17, 0.16, 1)
-
-[node name="T20" type="ColorRect" parent="TileRow9" unique_id=259037730]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.14, 0.13, 0.12, 1)
-
-[node name="TileRow10" type="HBoxContainer" parent="." unique_id=1382832009]
-layout_mode = 0
-offset_top = 432.0
-offset_right = 1280.0
-offset_bottom = 479.0
-theme_override_constants/separation = 1
-
-[node name="T1" type="ColorRect" parent="TileRow10" unique_id=1246082890]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.16, 0.15, 0.14, 1)
-
-[node name="T2" type="ColorRect" parent="TileRow10" unique_id=25412724]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T3" type="ColorRect" parent="TileRow10" unique_id=1556096397]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.2, 0.19, 0.18, 1)
-
-[node name="T4" type="ColorRect" parent="TileRow10" unique_id=367924098]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.14, 0.13, 0.12, 1)
-
-[node name="T5" type="ColorRect" parent="TileRow10" unique_id=411677047]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.19, 0.18, 0.17, 1)
-
-[node name="T6" type="ColorRect" parent="TileRow10" unique_id=128377550]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T7" type="ColorRect" parent="TileRow10" unique_id=1676464753]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T8" type="ColorRect" parent="TileRow10" unique_id=2077973651]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.15, 0.14, 0.13, 1)
-
-[node name="T9" type="ColorRect" parent="TileRow10" unique_id=1879088202]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T10" type="ColorRect" parent="TileRow10" unique_id=824826472]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.18, 0.17, 0.16, 1)
-
-[node name="T11" type="ColorRect" parent="TileRow10" unique_id=1528094727]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.14, 0.13, 0.12, 1)
-
-[node name="T12" type="ColorRect" parent="TileRow10" unique_id=1729387711]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.2, 0.19, 0.18, 1)
-
-[node name="T13" type="ColorRect" parent="TileRow10" unique_id=716636121]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T14" type="ColorRect" parent="TileRow10" unique_id=645662937]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.17, 0.16, 0.15, 1)
-
-[node name="T15" type="ColorRect" parent="TileRow10" unique_id=112606499]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T16" type="ColorRect" parent="TileRow10" unique_id=1935262677]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T17" type="ColorRect" parent="TileRow10" unique_id=12561253]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.19, 0.18, 0.17, 1)
-
-[node name="T18" type="ColorRect" parent="TileRow10" unique_id=962767876]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.15, 0.14, 0.13, 1)
-
-[node name="T19" type="ColorRect" parent="TileRow10" unique_id=1987710006]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T20" type="ColorRect" parent="TileRow10" unique_id=1626416664]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.16, 0.15, 0.14, 1)
-
-[node name="TileRow11" type="HBoxContainer" parent="." unique_id=684020918]
-layout_mode = 0
-offset_top = 480.0
-offset_right = 1280.0
-offset_bottom = 527.0
-theme_override_constants/separation = 1
-
-[node name="T1" type="ColorRect" parent="TileRow11" unique_id=959700217]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T2" type="ColorRect" parent="TileRow11" unique_id=422180105]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.2, 0.19, 0.18, 1)
-
-[node name="T3" type="ColorRect" parent="TileRow11" unique_id=1254762702]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.14, 0.13, 0.12, 1)
-
-[node name="T4" type="ColorRect" parent="TileRow11" unique_id=255373551]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.18, 0.17, 0.16, 1)
-
-[node name="T5" type="ColorRect" parent="TileRow11" unique_id=1540450090]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T6" type="ColorRect" parent="TileRow11" unique_id=1539869219]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T7" type="ColorRect" parent="TileRow11" unique_id=314298876]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.16, 0.15, 0.14, 1)
-
-[node name="T8" type="ColorRect" parent="TileRow11" unique_id=866934731]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.19, 0.18, 0.17, 1)
-
-[node name="T9" type="ColorRect" parent="TileRow11" unique_id=828013094]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T10" type="ColorRect" parent="TileRow11" unique_id=1893392181]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.15, 0.14, 0.13, 1)
-
-[node name="T11" type="ColorRect" parent="TileRow11" unique_id=1435249330]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.2, 0.19, 0.18, 1)
-
-[node name="T12" type="ColorRect" parent="TileRow11" unique_id=1056078107]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T13" type="ColorRect" parent="TileRow11" unique_id=1068395390]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.18, 0.17, 0.16, 1)
-
-[node name="T14" type="ColorRect" parent="TileRow11" unique_id=1294882679]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.14, 0.13, 0.12, 1)
-
-[node name="T15" type="ColorRect" parent="TileRow11" unique_id=508888186]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T16" type="ColorRect" parent="TileRow11" unique_id=1607679090]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T17" type="ColorRect" parent="TileRow11" unique_id=2140063415]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.17, 0.16, 0.15, 1)
-
-[node name="T18" type="ColorRect" parent="TileRow11" unique_id=794164449]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T19" type="ColorRect" parent="TileRow11" unique_id=1087081690]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.19, 0.18, 0.17, 1)
-
-[node name="T20" type="ColorRect" parent="TileRow11" unique_id=384005971]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.15, 0.14, 0.13, 1)
-
-[node name="TileRow12" type="HBoxContainer" parent="." unique_id=144838121]
-layout_mode = 0
-offset_top = 528.0
-offset_right = 1280.0
-offset_bottom = 575.0
-theme_override_constants/separation = 1
-
-[node name="T1" type="ColorRect" parent="TileRow12" unique_id=1369167239]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.18, 0.17, 0.16, 1)
-
-[node name="T2" type="ColorRect" parent="TileRow12" unique_id=791985729]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T3" type="ColorRect" parent="TileRow12" unique_id=2048638051]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T4" type="ColorRect" parent="TileRow12" unique_id=346132958]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.15, 0.14, 0.13, 1)
-
-[node name="T5" type="ColorRect" parent="TileRow12" unique_id=1792829191]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T6" type="ColorRect" parent="TileRow12" unique_id=1034092929]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.2, 0.19, 0.18, 1)
-
-[node name="T7" type="ColorRect" parent="TileRow12" unique_id=1626394068]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T8" type="ColorRect" parent="TileRow12" unique_id=1041023462]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.17, 0.16, 0.15, 1)
-
-[node name="T9" type="ColorRect" parent="TileRow12" unique_id=140248235]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.14, 0.13, 0.12, 1)
-
-[node name="T10" type="ColorRect" parent="TileRow12" unique_id=569249191]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T11" type="ColorRect" parent="TileRow12" unique_id=1648821161]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T12" type="ColorRect" parent="TileRow12" unique_id=69566272]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.19, 0.18, 0.17, 1)
-
-[node name="T13" type="ColorRect" parent="TileRow12" unique_id=1769204553]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.16, 0.15, 0.14, 1)
-
-[node name="T14" type="ColorRect" parent="TileRow12" unique_id=856658570]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T15" type="ColorRect" parent="TileRow12" unique_id=1187974544]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.2, 0.19, 0.18, 1)
-
-[node name="T16" type="ColorRect" parent="TileRow12" unique_id=690660477]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.14, 0.13, 0.12, 1)
-
-[node name="T17" type="ColorRect" parent="TileRow12" unique_id=486174292]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T18" type="ColorRect" parent="TileRow12" unique_id=1133028910]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.18, 0.17, 0.16, 1)
-
-[node name="T19" type="ColorRect" parent="TileRow12" unique_id=1705825563]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T20" type="ColorRect" parent="TileRow12" unique_id=1214209942]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="TileRow13" type="HBoxContainer" parent="." unique_id=1181004733]
-layout_mode = 0
-offset_top = 576.0
-offset_right = 1280.0
-offset_bottom = 623.0
-theme_override_constants/separation = 1
-
-[node name="T1" type="ColorRect" parent="TileRow13" unique_id=2089116674]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.15, 0.14, 0.13, 1)
-
-[node name="T2" type="ColorRect" parent="TileRow13" unique_id=144961807]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.19, 0.18, 0.17, 1)
-
-[node name="T3" type="ColorRect" parent="TileRow13" unique_id=1270731275]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T4" type="ColorRect" parent="TileRow13" unique_id=1803325062]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T5" type="ColorRect" parent="TileRow13" unique_id=1572473492]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.16, 0.15, 0.14, 1)
-
-[node name="T6" type="ColorRect" parent="TileRow13" unique_id=150183097]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T7" type="ColorRect" parent="TileRow13" unique_id=1305630412]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.18, 0.17, 0.16, 1)
-
-[node name="T8" type="ColorRect" parent="TileRow13" unique_id=1304490928]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.14, 0.13, 0.12, 1)
-
-[node name="T9" type="ColorRect" parent="TileRow13" unique_id=214498629]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.2, 0.19, 0.18, 1)
-
-[node name="T10" type="ColorRect" parent="TileRow13" unique_id=1952114721]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T11" type="ColorRect" parent="TileRow13" unique_id=921890330]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.17, 0.16, 0.15, 1)
-
-[node name="T12" type="ColorRect" parent="TileRow13" unique_id=315728578]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.21, 0.2, 0.19, 1)
-
-[node name="T13" type="ColorRect" parent="TileRow13" unique_id=1804196930]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T14" type="ColorRect" parent="TileRow13" unique_id=606365704]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.19, 0.18, 0.17, 1)
-
-[node name="T15" type="ColorRect" parent="TileRow13" unique_id=1720353952]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.15, 0.14, 0.13, 1)
-
-[node name="T16" type="ColorRect" parent="TileRow13" unique_id=989392752]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T17" type="ColorRect" parent="TileRow13" unique_id=900763859]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.2, 0.19, 0.18, 1)
-
-[node name="T18" type="ColorRect" parent="TileRow13" unique_id=1244012186]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.13, 0.12, 0.11, 1)
-
-[node name="T19" type="ColorRect" parent="TileRow13" unique_id=809211640]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.16, 0.15, 0.14, 1)
-
-[node name="T20" type="ColorRect" parent="TileRow13" unique_id=203225212]
-custom_minimum_size = Vector2(63, 46)
-layout_mode = 2
-color = Color(0.18, 0.17, 0.16, 1)
-
-[node name="DimOverlay" type="ColorRect" parent="." unique_id=151830956]
+[node name="DimOverlay" type="ColorRect" parent="." unique_id=791481853]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = 10.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.04, 0.03, 0.03, 0.52)
 
-[node name="Embers" type="GPUParticles2D" parent="." unique_id=1786216960]
+[node name="Embers" type="GPUParticles2D" parent="." unique_id=309678504]
 position = Vector2(640, 760)
 amount = 50
 lifetime = 5.0
 randomness = 1.0
 
-[node name="PlayerShowcase" type="TextureRect" parent="." unique_id=1834498514]
+[node name="PlayerShowcase" type="TextureRect" parent="." unique_id=2107663903]
 layout_mode = 0
 offset_left = 60.0
-offset_top = 140.0
+offset_top = 80.0
 offset_right = 420.0
-offset_bottom = 500.0
+offset_bottom = 545.0
 stretch_mode = 5
 
-[node name="TitleLabel" type="Label" parent="." unique_id=466225172]
+[node name="TitleLabel" type="Label" parent="." unique_id=1162316725]
 layout_mode = 0
 offset_left = 480.0
-offset_top = 130.0
+offset_top = 80.0
 offset_right = 1220.0
-offset_bottom = 220.0
+offset_bottom = 175.0
 theme_override_colors/font_color = Color(0.9, 0.08, 0.08, 1)
 theme_override_font_sizes/font_size = 62
 text = "GUN CHAOS"
 horizontal_alignment = 1
 
-[node name="SubtitleLabel" type="Label" parent="." unique_id=1698281545]
+[node name="SubtitleLabel" type="Label" parent="." unique_id=1261081626]
 layout_mode = 0
 offset_left = 480.0
-offset_top = 225.0
+offset_top = 178.0
 offset_right = 1220.0
-offset_bottom = 255.0
+offset_bottom = 208.0
 theme_override_colors/font_color = Color(0.45, 0.42, 0.42, 1)
 theme_override_font_sizes/font_size = 14
 text = "survive. evolve. dominate."
 horizontal_alignment = 1
 
-[node name="PlayButton" type="Button" parent="." unique_id=1182429245]
+[node name="PlayButton" type="Button" parent="." unique_id=885350319]
 layout_mode = 0
 offset_left = 520.0
-offset_top = 300.0
+offset_top = 255.0
 offset_right = 1180.0
-offset_bottom = 365.0
+offset_bottom = 320.0
 theme_override_font_sizes/font_size = 22
 text = "⚔   PLAY"
 
-[node name="CreditsButton" type="Button" parent="." unique_id=1013310333]
+[node name="CreditsButton" type="Button" parent="." unique_id=2134679274]
 layout_mode = 0
 offset_left = 520.0
-offset_top = 385.0
+offset_top = 338.0
 offset_right = 1180.0
-offset_bottom = 450.0
+offset_bottom = 403.0
 theme_override_font_sizes/font_size = 22
 text = "✦   CREDITS"
 
-[node name="ExitButton" type="Button" parent="." unique_id=1092385262]
+[node name="ExitButton" type="Button" parent="." unique_id=1874327574]
 layout_mode = 0
 offset_left = 520.0
-offset_top = 470.0
+offset_top = 421.0
 offset_right = 1180.0
-offset_bottom = 535.0
+offset_bottom = 486.0
 theme_override_font_sizes/font_size = 22
 text = "✖   EXIT GAME"
 
-[node name="CreditsOverlay" type="Control" parent="." unique_id=1466863533]
+[node name="btn_sfx" type="AudioStreamPlayer2D" parent="." unique_id=2091048998]
+
+[node name="ModeOverlay" type="Control" parent="." unique_id=2074283634]
 visible = false
 z_index = 10
 layout_mode = 1
@@ -1495,7 +855,90 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="DimBackground" type="ColorRect" parent="CreditsOverlay" unique_id=1705000238]
+[node name="DimBackground" type="ColorRect" parent="ModeOverlay" unique_id=433222800]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.8)
+
+[node name="Panel" type="PanelContainer" parent="ModeOverlay" unique_id=1362576951]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -230.0
+offset_top = -220.0
+offset_right = 230.0
+offset_bottom = 220.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="ModeOverlay/Panel" unique_id=372714516]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="ModeTitle" type="Label" parent="ModeOverlay/Panel/VBox" unique_id=1804367027]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.08, 0.08, 1)
+theme_override_font_sizes/font_size = 28
+text = "SELECT MODE"
+horizontal_alignment = 1
+
+[node name="Divider" type="HSeparator" parent="ModeOverlay/Panel/VBox" unique_id=451298022]
+layout_mode = 2
+
+[node name="NormalDesc" type="Label" parent="ModeOverlay/Panel/VBox" unique_id=1950967774]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.52, 0.5, 1)
+theme_override_font_sizes/font_size = 13
+text = "Progress through all stages in order."
+horizontal_alignment = 1
+
+[node name="NormalModeButton" type="Button" parent="ModeOverlay/Panel/VBox" unique_id=150254902]
+custom_minimum_size = Vector2(340, 54)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "⚔   NORMAL MODE"
+
+[node name="ArcadeDesc" type="Label" parent="ModeOverlay/Panel/VBox" unique_id=796939733]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.52, 0.5, 1)
+theme_override_font_sizes/font_size = 13
+text = "Choose any unlocked stage to replay."
+horizontal_alignment = 1
+
+[node name="ArcadeModeButton" type="Button" parent="ModeOverlay/Panel/VBox" unique_id=412739467]
+custom_minimum_size = Vector2(340, 54)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "🎮   ARCADE MODE"
+
+[node name="Spacer" type="Control" parent="ModeOverlay/Panel/VBox" unique_id=809182054]
+custom_minimum_size = Vector2(0, 4)
+layout_mode = 2
+
+[node name="CloseModeButton" type="Button" parent="ModeOverlay/Panel/VBox" unique_id=450186538]
+custom_minimum_size = Vector2(340, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "✖   CANCEL"
+
+[node name="CreditsOverlay" type="Control" parent="." unique_id=1191113636]
+visible = false
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DimBackground" type="ColorRect" parent="CreditsOverlay" unique_id=1392954447]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1504,7 +947,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.82)
 
-[node name="Panel" type="PanelContainer" parent="CreditsOverlay" unique_id=486382035]
+[node name="Panel" type="PanelContainer" parent="CreditsOverlay" unique_id=1834998912]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -1518,21 +961,21 @@ offset_bottom = 210.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBox" type="VBoxContainer" parent="CreditsOverlay/Panel" unique_id=303310223]
+[node name="VBox" type="VBoxContainer" parent="CreditsOverlay/Panel" unique_id=1830964010]
 layout_mode = 2
 theme_override_constants/separation = 14
 
-[node name="CreditsTitle" type="Label" parent="CreditsOverlay/Panel/VBox" unique_id=1624498162]
+[node name="CreditsTitle" type="Label" parent="CreditsOverlay/Panel/VBox" unique_id=1434497866]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.9, 0.08, 0.08, 1)
 theme_override_font_sizes/font_size = 30
 text = "CREDITS"
 horizontal_alignment = 1
 
-[node name="Divider" type="HSeparator" parent="CreditsOverlay/Panel/VBox" unique_id=1895582177]
+[node name="Divider" type="HSeparator" parent="CreditsOverlay/Panel/VBox" unique_id=950419622]
 layout_mode = 2
 
-[node name="CreditsText" type="Label" parent="CreditsOverlay/Panel/VBox" unique_id=1038216281]
+[node name="CreditsText" type="Label" parent="CreditsOverlay/Panel/VBox" unique_id=1933341555]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.78, 0.78, 0.78, 1)
 theme_override_font_sizes/font_size = 15
@@ -1548,15 +991,12 @@ Maurice Fontanosa
 Built with Godot Engine 4"
 horizontal_alignment = 1
 
-[node name="Spacer" type="Control" parent="CreditsOverlay/Panel/VBox" unique_id=1937233736]
+[node name="Spacer2" type="Control" parent="CreditsOverlay/Panel/VBox" unique_id=476233005]
 custom_minimum_size = Vector2(0, 8)
 layout_mode = 2
 
-[node name="CloseCreditsButton" type="Button" parent="CreditsOverlay/Panel/VBox" unique_id=207879552]
+[node name="CloseCreditsButton" type="Button" parent="CreditsOverlay/Panel/VBox" unique_id=1301206799]
 custom_minimum_size = Vector2(200, 48)
 layout_mode = 2
 theme_override_font_sizes/font_size = 16
 text = "✖   CLOSE"
-
-[node name="btn_sfx" type="AudioStreamPlayer2D" parent="." unique_id=987882138]
-stream = ExtResource("3_1ehe0")

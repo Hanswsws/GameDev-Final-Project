@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://gamemap2_scene"]
+
+[ext_resource type="Script" path="res://Scripts/gamemap2.gd" id="1_gm2"]
+[ext_resource type="PackedScene" path="res://Scenes/player.tscn" id="2_player"]
+[ext_resource type="PackedScene" path="res://Scenes/hud.tscn" id="3_hud"]
+[ext_resource type="PackedScene" path="res://Scenes/score.tscn" id="4_score"]
+[ext_resource type="PackedScene" path="res://Scenes/slime.tscn" id="5_slime"]
+[ext_resource type="PackedScene" path="res://Scenes/slimeboss.tscn" id="6_boss"]
+[ext_resource type="Script" path="res://Scripts/spawner.gd" id="7_spawner"]
+
+[node name="gamemap2" type="Node2D"]
+script = ExtResource("1_gm2")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="player" parent="." instance=ExtResource("2_player")]
+position = Vector2(640, 312)
+
+[node name="HUD" parent="." instance=ExtResource("3_hud")]
+
+[node name="score" parent="." instance=ExtResource("4_score")]
+
+[node name="slime spawner" type="Node2D" parent="."]
+
+[node name="spawner" type="Node2D" parent="slime spawner"]
+script = ExtResource("7_spawner")
+enemy_scene = ExtResource("5_slime")
+spawn_rate = 1.4
+spawn_radius = 500.0
+
+[node name="spawner2" type="Node2D" parent="slime spawner"]
+script = ExtResource("7_spawner")
+enemy_scene = ExtResource("5_slime")
+spawn_rate = 1.6
+spawn_radius = 480.0
+
+[node name="spawner3" type="Node2D" parent="slime spawner"]
+script = ExtResource("7_spawner")
+enemy_scene = ExtResource("6_boss")
+spawn_rate = 8.0
+spawn_radius = 450.0
+
+[node name="spawner4" type="Node2D" parent="slime spawner"]
+script = ExtResource("7_spawner")
+enemy_scene = ExtResource("5_slime")
+spawn_rate = 1.2
+spawn_radius = 460.0

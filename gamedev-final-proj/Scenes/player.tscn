@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://lsfhcheur06c" path="res://GAME ASSETS/PLAYER SPRITE_WALK.png" id="3_fkybt"]
 [ext_resource type="PackedScene" uid="uid://b1mgx34nboch" path="res://Scenes/bow.tscn" id="3_x3wgy"]
 [ext_resource type="PackedScene" uid="uid://oaea015a4si2" path="res://Scenes/gun.tscn" id="5_fkybt"]
+[ext_resource type="Script" uid="uid://oy7fp3qregtj" path="res://Scripts/player_health_bar.gd" id="7_3smsa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vgqql"]
 atlas = ExtResource("1_6t5aa")
@@ -215,6 +216,10 @@ limit_bottom = 3900
 [node name="weaponholderswap" type="Timer" parent="." unique_id=399891874]
 wait_time = 10.0
 autostart = true
+
+[node name="HealthBar" type="Node2D" parent="." unique_id=874183894]
+position = Vector2(-8, -202)
+script = ExtResource("7_3smsa")
 
 [connection signal="body_entered" from="attackarea" to="." method="_on_attackarea_body_entered"]
 [connection signal="timeout" from="weaponholderswap" to="." method="_on_weaponholderswap_timeout"]

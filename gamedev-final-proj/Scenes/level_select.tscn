@@ -1,0 +1,224 @@
+[gd_scene format=3 uid="uid://cay8mwva8wtxh"]
+
+[ext_resource type="Script" uid="uid://c3gt0dkfnp80k" path="res://Scripts/level_select.gd" id="1_1fiak"]
+[ext_resource type="Theme" uid="uid://vd3vpjodq4vi" path="res://arena_theme.tres" id="1_nkys2"]
+
+[node name="LevelSelect" type="Control" unique_id=1391424676]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_nkys2")
+script = ExtResource("1_1fiak")
+
+[node name="BG" type="ColorRect" parent="." unique_id=2034253533]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.06, 0.05, 0.05, 1)
+
+[node name="Embers" type="GPUParticles2D" parent="." unique_id=128902497]
+position = Vector2(640, 760)
+amount = 40
+lifetime = 5.0
+randomness = 1.0
+
+[node name="TitleLabel" type="Label" parent="." unique_id=479080971]
+layout_mode = 0
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 110.0
+theme_override_colors/font_color = Color(0.9, 0.08, 0.08, 1)
+theme_override_font_sizes/font_size = 48
+text = "ARCADE MODE"
+horizontal_alignment = 1
+
+[node name="SubLabel" type="Label" parent="." unique_id=1875705292]
+layout_mode = 0
+offset_top = 108.0
+offset_right = 1280.0
+offset_bottom = 135.0
+theme_override_colors/font_color = Color(0.45, 0.42, 0.42, 1)
+theme_override_font_sizes/font_size = 14
+text = "choose your stage"
+horizontal_alignment = 1
+
+[node name="LevelsContainer" type="HBoxContainer" parent="." unique_id=178203551]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 160.0
+offset_right = 1180.0
+offset_bottom = 480.0
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="Level1Card" type="PanelContainer" parent="LevelsContainer" unique_id=238290635]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="LevelsContainer/Level1Card" unique_id=396781060]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="ThumbBG" type="ColorRect" parent="LevelsContainer/Level1Card/VBox" unique_id=373783429]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+color = Color(0.13, 0.11, 0.1, 1)
+
+[node name="ThumbLabel" type="Label" parent="LevelsContainer/Level1Card/VBox/ThumbBG" unique_id=470799203]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9, 0.08, 0.08, 1)
+theme_override_font_sizes/font_size = 22
+text = "STAGE 1"
+horizontal_alignment = 1
+
+[node name="StageLabel" type="Label" parent="LevelsContainer/Level1Card/VBox" unique_id=880607715]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.82, 0.78, 1)
+theme_override_font_sizes/font_size = 18
+text = "Stage 1"
+horizontal_alignment = 1
+
+[node name="StatusLabel" type="Label" parent="LevelsContainer/Level1Card/VBox" unique_id=1522545868]
+modulate = Color(0.15, 0.85, 0.2, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "UNLOCKED"
+horizontal_alignment = 1
+
+[node name="PlayBtn" type="Button" parent="LevelsContainer/Level1Card/VBox" unique_id=740224753]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "⚔   PLAY"
+
+[node name="Level2Card" type="PanelContainer" parent="LevelsContainer" unique_id=441814186]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="LevelsContainer/Level2Card" unique_id=2098706742]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="ThumbBG" type="ColorRect" parent="LevelsContainer/Level2Card/VBox" unique_id=2094274929]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+color = Color(0.13, 0.11, 0.1, 1)
+
+[node name="ThumbLabel" type="Label" parent="LevelsContainer/Level2Card/VBox/ThumbBG" unique_id=347949859]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9, 0.08, 0.08, 1)
+theme_override_font_sizes/font_size = 22
+text = "STAGE 2"
+horizontal_alignment = 1
+
+[node name="LockIcon" type="Label" parent="LevelsContainer/Level2Card/VBox/ThumbBG" unique_id=226211061]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 36
+text = "🔒"
+horizontal_alignment = 1
+
+[node name="StageLabel" type="Label" parent="LevelsContainer/Level2Card/VBox" unique_id=809933733]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.82, 0.78, 1)
+theme_override_font_sizes/font_size = 18
+text = "Stage 2"
+horizontal_alignment = 1
+
+[node name="StatusLabel" type="Label" parent="LevelsContainer/Level2Card/VBox" unique_id=695603379]
+modulate = Color(0.55, 0.52, 0.5, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Complete Stage 1 to unlock"
+horizontal_alignment = 1
+
+[node name="PlayBtn" type="Button" parent="LevelsContainer/Level2Card/VBox" unique_id=2076771449]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+disabled = true
+text = "⚔   PLAY"
+
+[node name="Level3Card" type="PanelContainer" parent="LevelsContainer" unique_id=1583372577]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="LevelsContainer/Level3Card" unique_id=406566941]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="ThumbBG" type="ColorRect" parent="LevelsContainer/Level3Card/VBox" unique_id=879225028]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+color = Color(0.06, 0.05, 0.05, 1)
+
+[node name="QuestionMark" type="Label" parent="LevelsContainer/Level3Card/VBox/ThumbBG" unique_id=1805645689]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.3, 0.28, 0.28, 1)
+theme_override_font_sizes/font_size = 64
+text = "?"
+horizontal_alignment = 1
+
+[node name="StageLabel" type="Label" parent="LevelsContainer/Level3Card/VBox" unique_id=1872275997]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.38, 0.36, 1)
+theme_override_font_sizes/font_size = 18
+text = "Stage 3"
+horizontal_alignment = 1
+
+[node name="StatusLabel" type="Label" parent="LevelsContainer/Level3Card/VBox" unique_id=1947453085]
+modulate = Color(0.4, 0.38, 0.36, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Coming Soon..."
+horizontal_alignment = 1
+
+[node name="PlayBtn" type="Button" parent="LevelsContainer/Level3Card/VBox" unique_id=13229671]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+disabled = true
+text = "???"
+
+[node name="BackButton" type="Button" parent="." unique_id=2016180878]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 530.0
+offset_right = 240.0
+offset_bottom = 580.0
+theme_override_font_sizes/font_size = 16
+text = "← BACK"
