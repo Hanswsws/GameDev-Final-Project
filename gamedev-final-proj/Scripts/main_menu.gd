@@ -70,10 +70,11 @@ func _on_close_mode_pressed():
 func _on_normal_mode_pressed():
 	btn_sfx.play()
 	mode_overlay.visible = false
-	Gamemanager.reset_score()
-	Musicmanager.play_battle_music()
-	await get_tree().create_timer(0.3).timeout
-	get_tree().change_scene_to_file("res://Scenes/loading_screen.tscn")
+	# Fade out menu music — the intro narration plays in silence for atmosphere
+	Musicmanager.play_menu_music()   # keep menu music while menu fades
+	await get_tree().create_timer(0.2).timeout
+	# Go to the intro narration scene; it will handle reset_score + battle music + loading_screen
+	get_tree().change_scene_to_file("res://Scenes/intro_narration.tscn")
 
 func _on_arcade_mode_pressed():
 	btn_sfx.play()
