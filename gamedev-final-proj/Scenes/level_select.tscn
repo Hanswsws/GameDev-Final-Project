@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c3gt0dkfnp80k" path="res://Scripts/level_select.gd" id="1_1fiak"]
 [ext_resource type="Theme" uid="uid://vd3vpjodq4vi" path="res://arena_theme.tres" id="1_nkys2"]
+[ext_resource type="AudioStream" uid="uid://bwnwgnxrbmcqi" path="res://GAME ASSETS/sfx/menuclicksandsounds_not_amasingrock-[AudioTrimmer.com].mp3" id="3_lx4vd"]
 
 [node name="LevelSelect" type="Control" unique_id=1391424676]
 layout_mode = 3
@@ -222,3 +223,6 @@ offset_right = 240.0
 offset_bottom = 580.0
 theme_override_font_sizes/font_size = 16
 text = "← BACK"
+
+[node name="clicksound" type="AudioStreamPlayer2D" parent="." unique_id=1187874256]
+stream = ExtResource("3_lx4vd")

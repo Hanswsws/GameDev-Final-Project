@@ -6,8 +6,15 @@ extends CharacterBody2D
 @onready var sprite = $AnimatedSprite2D
 @onready var attack_area = $attackarea
 
-var health = 100
-var max_health = 100
+@onready var swap_sound = $swapsound
+var weapon_sounds = {
+	"sword": preload("res://GAME ASSETS/sfx/sword/swordequip_dragon-studio.mp3"),
+	"gun": preload("res://GAME ASSETS/sfx/gun/gunequip_homemade_sfx.mp3"),
+	"bow": preload("res://GAME ASSETS/sfx/bowequip_lucas_lesc-[AudioTrimmer.com].mp3")
+}
+
+var health = 150
+var max_health = 150
 var attacking = false
 var hurt = false
 var dead = false
@@ -34,6 +41,11 @@ func swap_weapon():
 	current_weapon = weapons[random_index].instantiate()
 	weapon_holder.add_child(current_weapon)
 	current_weapon.position = Vector2.ZERO
+	
+	var weapon_name = current_weapon.name 
+	if weapon_sounds.has(weapon_name):
+		swap_sound.stream = weapon_sounds[weapon_name]
+		swap_sound.play()
 
 func _physics_process(delta:float) -> void:
 	var mouse_pos = get_global_mouse_position()
@@ -42,14 +54,17 @@ func _physics_process(delta:float) -> void:
 	else:
 		sprite.flip_h = false
 
-	if dead or hurt:
+	if dead:
+		velocity = Vector2.ZERO
 		move_and_slide()
 		return
 
-	if attacking:
-		velocity.x = 0
+	if hurt:
 		move_and_slide()
 		return
+
+
+	
 
 	var direction = Vector2.ZERO
 	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
@@ -91,10 +106,25 @@ func take_damage(amount):
 		die()
 
 func die():
+
 	dead = true
+
+	# Stop all movement
+	velocity = Vector2.ZERO
+
+	# Stop attacking
+	attacking = false
+
+	# Disable hitbox
+	attack_area.monitoring = false
+
+	# Play death animation
 	sprite.play("death")
+
 	await sprite.animation_finished
+
 	var hud = get_tree().get_first_node_in_group("hud")
+
 	if hud:
 		hud.show_death_screen()
 	else:

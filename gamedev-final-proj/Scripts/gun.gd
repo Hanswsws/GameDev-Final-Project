@@ -15,6 +15,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	look_at(get_global_mouse_position())
 	
+	
 	fire_timer -= delta
 
 	rotation_degrees = wrap(rotation_degrees, 0, 360)
@@ -34,7 +35,13 @@ func fire_bullet():
 
 	bullet_instance.global_position = muzzle.global_position
 	bullet_instance.rotation = rotation
+	
+	var gun_sound = $AudioStreamPlayer2D
+	if gun_sound:
+		gun_sound.play()
 
+	await get_tree().create_timer(0.15).timeout
+	
 	flash.visible = true
 	flash_timer.start()
 

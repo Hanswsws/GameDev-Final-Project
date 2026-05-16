@@ -1,0 +1,179 @@
+[gd_scene format=3 uid="uid://csiuvc2hx723y"]
+
+[ext_resource type="Script" uid="uid://cvhwsefg25djk" path="res://Scripts/robotboss.gd" id="1_belee"]
+[ext_resource type="Texture2D" uid="uid://my065ybotf3s" path="res://GAME ASSETS/enemyattack and walk.png" id="1_p4sxd"]
+[ext_resource type="Texture2D" uid="uid://dt1k6g1olat8v" path="res://GAME ASSETS/DeathAndHurt_NinjaGame_Dev_.png" id="2_belee"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tks4o"]
+atlas = ExtResource("1_p4sxd")
+region = Rect2(1024, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_84ahi"]
+atlas = ExtResource("1_p4sxd")
+region = Rect2(1280, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crbkl"]
+atlas = ExtResource("1_p4sxd")
+region = Rect2(1536, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53aos"]
+atlas = ExtResource("1_p4sxd")
+region = Rect2(1792, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ir8vf"]
+atlas = ExtResource("2_belee")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_temrs"]
+atlas = ExtResource("2_belee")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0umi2"]
+atlas = ExtResource("2_belee")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0kub1"]
+atlas = ExtResource("2_belee")
+region = Rect2(1024, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fxom3"]
+atlas = ExtResource("2_belee")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xbtrt"]
+atlas = ExtResource("1_p4sxd")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_csv4a"]
+atlas = ExtResource("1_p4sxd")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2k5ur"]
+atlas = ExtResource("1_p4sxd")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3gr3w"]
+atlas = ExtResource("1_p4sxd")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_076ti"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tks4o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_84ahi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crbkl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53aos")
+}],
+"loop": false,
+"name": &"robotboss_attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8vf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_temrs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0umi2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0kub1")
+}],
+"loop": false,
+"name": &"robotboss_death",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fxom3")
+}],
+"loop": false,
+"name": &"robotboss_hurt",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xbtrt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_csv4a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2k5ur")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_csv4a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3gr3w")
+}],
+"loop": true,
+"name": &"robotboss_walk",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ggqvx"]
+radius = 161.0
+height = 418.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_os31p"]
+radius = 215.0372
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_belee"]
+bg_color = Color(0.6, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tks4o"]
+bg_color = Color(0.6, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="robotboss" type="CharacterBody2D" unique_id=258361004 groups=["enemies"]]
+collision_layer = 3
+script = ExtResource("1_belee")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=209315519]
+position = Vector2(0, 0.9999962)
+scale = Vector2(5.0015874, 3.9301755)
+sprite_frames = SubResource("SpriteFrames_076ti")
+animation = &"robotboss_attack"
+autoplay = "robotboss_walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=49237962 groups=["enemies"]]
+visible = false
+position = Vector2(3, -3)
+shape = SubResource("CapsuleShape2D_ggqvx")
+
+[node name="robotattackarea" type="Area2D" parent="." unique_id=501780764]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="robotattackarea" unique_id=673789757]
+position = Vector2(1, 2)
+shape = SubResource("CircleShape2D_os31p")
+
+[node name="bosshealth" type="ProgressBar" parent="." unique_id=1635933182]
+offset_left = -210.0
+offset_top = -230.0
+offset_right = 221.0
+offset_bottom = -203.0
+theme_override_styles/background = SubResource("StyleBoxFlat_belee")
+theme_override_styles/fill = SubResource("StyleBoxFlat_tks4o")
+max_value = 3000.0
+value = 3000.0
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_entered" from="robotattackarea" to="." method="_on_robotattackarea_body_entered"]
+[connection signal="body_exited" from="robotattackarea" to="." method="_on_robotattackarea_body_exited"]

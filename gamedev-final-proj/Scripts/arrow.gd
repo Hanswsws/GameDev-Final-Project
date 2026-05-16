@@ -1,7 +1,7 @@
 extends Area2D
 
 const speed: int = 3000
-@export var damage: int = 60
+@export var damage: int = 30
 
 var shooter = null
 

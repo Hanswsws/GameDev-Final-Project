@@ -7,6 +7,7 @@ extends Control
 @onready var level2_label = $LevelsContainer/Level2Card/VBox/StatusLabel
 @onready var embers       = $Embers
 @onready var title_label  = $TitleLabel
+@onready var click_sound = $clicksound
 
 var title_pulse_time = 0.0
 
@@ -48,14 +49,17 @@ func _process(delta):
 	title_label.modulate = Color(pulse, pulse * 0.09, pulse * 0.09, 1.0)
 
 func _on_back_pressed():
+	click_sound.play()
 	get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
 
 func _on_level1_pressed():
+	click_sound.play()
 	Gamemanager.reset_score()
 	Musicmanager.play_battle_music()
 	get_tree().change_scene_to_file("res://Scenes/gamemap.tscn")
 
 func _on_level2_pressed():
+	click_sound.play()
 	if not SaveSystem.is_level2_unlocked():
 		return
 	Gamemanager.reset_score()

@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cjd2t5afwj06a" path="res://GAME ASSETS/GUN.png" id="1_nxj5y"]
 [ext_resource type="Script" uid="uid://c4w1nrrwfxtn4" path="res://Scripts/gun.gd" id="1_oqrbh"]
 [ext_resource type="Texture2D" uid="uid://cgpj43oqcmgig" path="res://GAME ASSETS/GunFlash.png" id="3_t6ynv"]
+[ext_resource type="AudioStream" uid="uid://b8v5o2y1k1fg3" path="res://GAME ASSETS/sfx/GunFire-[AudioTrimmer.com] (1).mp3" id="4_k4teu"]
 
 [node name="gun" type="Node2D" unique_id=957549946]
 script = ExtResource("1_oqrbh")
@@ -24,5 +25,9 @@ texture = ExtResource("3_t6ynv")
 [node name="flashTimer" type="Timer" parent="flash" unique_id=2134368902]
 wait_time = 0.1
 one_shot = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1952890260]
+stream = ExtResource("4_k4teu")
+volume_db = -25.0
 
 [connection signal="timeout" from="flash/flashTimer" to="flash" method="hide"]

@@ -1,14 +1,17 @@
 extends Node2D
 
+
 const KILLS_TO_COMPLETE = 50
 
 var kill_count = 0
 var level_complete = false
 var transition_scene = preload("res://Scenes/level_transition.tscn")
 
+
 func _ready():
+
 	Gamemanager.current_level = 2
-	Musicmanager.play_battle_music()
+	Musicmanager.play_boss_music()
 
 	var player = get_tree().get_first_node_in_group("player")
 	if player and Gamemanager.has_meta("carry_health"):
@@ -17,6 +20,7 @@ func _ready():
 		print("Level 2: Restored player health to ", player.health)
 
 	Gamemanager.score_changed.connect(_on_score_changed)
+
 
 func _on_score_changed(new_score):
 	kill_count = new_score / 50

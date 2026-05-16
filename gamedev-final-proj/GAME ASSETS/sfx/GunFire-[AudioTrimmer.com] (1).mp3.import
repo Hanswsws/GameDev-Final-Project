@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8v5o2y1k1fg3"
+path="res://.godot/imported/GunFire-[AudioTrimmer.com] (1).mp3-e1e0be5e8629868e8757c76772768ef9.mp3str"
+
+[deps]
+
+source_file="res://GAME ASSETS/sfx/GunFire-[AudioTrimmer.com] (1).mp3"
+dest_files=["res://.godot/imported/GunFire-[AudioTrimmer.com] (1).mp3-e1e0be5e8629868e8757c76772768ef9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

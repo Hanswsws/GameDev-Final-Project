@@ -4,13 +4,21 @@ extends Node2D
 @export var player: Node2D
 @export var spawn_radius := 400.0
 @export var min_spawn_distance := 200.0
-@export var spawn_rate := 2.0
+@export var spawn_rate := 5.0
 
 var time_passed := 0.0
 
 func _process(delta):
 	time_passed += delta
 
+	if player == null:
+		return
+
+	# Check score from Gamemanager singleton
+	if Gamemanager.score < 1000:
+		return
+
+	# Spawn enemy based on spawn_rate
 	if time_passed >= spawn_rate:
 		time_passed = 0.0
 		spawn_enemy()

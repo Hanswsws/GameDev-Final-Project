@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://cripegqlmcnis"]
 
 [ext_resource type="Script" uid="uid://0l0pqkrjpje8" path="res://Scripts/gamemanager.gd" id="1_kbhl5"]
+[ext_resource type="PackedScene" uid="uid://c7ew4yryu63ik" path="res://Scenes/slime.tscn" id="2_miiwv"]
+[ext_resource type="PackedScene" uid="uid://dg1ucp3krjvil" path="res://Scenes/slimeboss.tscn" id="3_6pml8"]
 
 [node name="gamemanager" type="Node2D" unique_id=1996986120]
 script = ExtResource("1_kbhl5")
+slime_scene = ExtResource("2_miiwv")
+slimeboss_scene = ExtResource("3_6pml8")

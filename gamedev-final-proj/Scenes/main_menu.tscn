@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b4wks6xomh0cs" path="res://Scripts/main_menu.gd" id="1_28flt"]
 [ext_resource type="Theme" uid="uid://vd3vpjodq4vi" path="res://arena_theme.tres" id="1_48xlc"]
+[ext_resource type="AudioStream" uid="uid://bwnwgnxrbmcqi" path="res://GAME ASSETS/sfx/menuclicksandsounds_not_amasingrock-[AudioTrimmer.com].mp3" id="3_1ehe0"]
 
 [node name="MainMenu" type="Control" unique_id=2122114387]
 layout_mode = 3
@@ -844,6 +845,7 @@ theme_override_font_sizes/font_size = 22
 text = "✖   EXIT GAME"
 
 [node name="btn_sfx" type="AudioStreamPlayer2D" parent="." unique_id=2091048998]
+stream = ExtResource("3_1ehe0")
 
 [node name="ModeOverlay" type="Control" parent="." unique_id=2074283634]
 visible = false

@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b1mgx34nboch" path="res://Scenes/bow.tscn" id="3_x3wgy"]
 [ext_resource type="PackedScene" uid="uid://oaea015a4si2" path="res://Scenes/gun.tscn" id="5_fkybt"]
 [ext_resource type="Script" uid="uid://oy7fp3qregtj" path="res://Scripts/player_health_bar.gd" id="7_3smsa"]
+[ext_resource type="PackedScene" uid="uid://beqq45oeamj6j" path="res://Scenes/sword.tscn" id="8_8erm5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vgqql"]
 atlas = ExtResource("1_6t5aa")
@@ -179,11 +180,11 @@ radius = 62.0
 height = 162.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_p1odr"]
-radius = 285.08594
+radius = 199.01006
 
 [node name="player" type="CharacterBody2D" unique_id=850425423 groups=["player"]]
 script = ExtResource("1_vgqql")
-weapons = Array[PackedScene]([ExtResource("5_fkybt"), ExtResource("3_x3wgy")])
+weapons = Array[PackedScene]([ExtResource("5_fkybt"), ExtResource("3_x3wgy"), ExtResource("8_8erm5")])
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=206098019]
 position = Vector2(3, -50)
@@ -199,12 +200,10 @@ shape = SubResource("CapsuleShape2D_2ijsl")
 [node name="attackarea" type="Area2D" parent="." unique_id=1111865705]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="attackarea" unique_id=981534141]
-visible = false
-position = Vector2(-4, 2)
+position = Vector2(0, -1)
 shape = SubResource("CircleShape2D_p1odr")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2038105026]
-position = Vector2(-11, -78)
 zoom = Vector2(0.35, 0.35)
 limit_left = -9998958
 limit_top = -9998297
@@ -214,12 +213,16 @@ limit_bottom = 3900
 [node name="weaponholder" type="Node2D" parent="." unique_id=389530661]
 
 [node name="weaponholderswap" type="Timer" parent="." unique_id=399891874]
-wait_time = 10.0
+wait_time = 5.0
 autostart = true
 
 [node name="HealthBar" type="Node2D" parent="." unique_id=874183894]
-position = Vector2(-8, -202)
+position = Vector2(18, 1000)
 script = ExtResource("7_3smsa")
+
+[node name="swapsound" type="AudioStreamPlayer2D" parent="." unique_id=2023787135]
+
+[node name="attacksound" type="AudioStreamPlayer2D" parent="." unique_id=366575656]
 
 [connection signal="body_entered" from="attackarea" to="." method="_on_attackarea_body_entered"]
 [connection signal="timeout" from="weaponholderswap" to="." method="_on_weaponholderswap_timeout"]

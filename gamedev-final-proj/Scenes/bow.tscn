@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://x6jlvwrgj3qv" path="res://Scripts/bow.gd" id="1_sas2l"]
 [ext_resource type="Texture2D" uid="uid://bcy5n73guhseg" path="res://GAME ASSETS/Bow(FINAL).png" id="2_3cct7"]
+[ext_resource type="AudioStream" uid="uid://g0v6l4t26jgp" path="res://GAME ASSETS/sfx/bow/arrowrelease_djartmusic.mp3" id="3_ju2r0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ju2r0"]
 atlas = ExtResource("2_3cct7")
@@ -57,3 +58,6 @@ one_shot = true
 [node name="bowmarker" type="Marker2D" parent="." unique_id=502444155]
 position = Vector2(15, 10)
 gizmo_extents = 0.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1176761883]
+stream = ExtResource("3_ju2r0")

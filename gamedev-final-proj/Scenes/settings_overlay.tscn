@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cf6755cij4ukg"]
 
-[ext_resource type="Theme" uid="uid://b63ktbej51ud5" path="res://arena_theme.tres" id="1_gdk2x"]
+[ext_resource type="Theme" uid="uid://vd3vpjodq4vi" path="res://arena_theme.tres" id="1_gdk2x"]
 [ext_resource type="Script" uid="uid://bqaa00ygn5vko" path="res://Scripts/settings_overlay.gd" id="2_x31rx"]
+[ext_resource type="AudioStream" uid="uid://bwnwgnxrbmcqi" path="res://GAME ASSETS/sfx/menuclicksandsounds_not_amasingrock-[AudioTrimmer.com].mp3" id="3_x31rx"]
 
 [node name="SettingsOverlay" type="Control" unique_id=1549835048]
 visible = false
@@ -67,3 +68,6 @@ custom_minimum_size = Vector2(280, 52)
 layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "MAIN MENU"
+
+[node name="clicksound" type="AudioStreamPlayer2D" parent="." unique_id=270465399]
+stream = ExtResource("3_x31rx")

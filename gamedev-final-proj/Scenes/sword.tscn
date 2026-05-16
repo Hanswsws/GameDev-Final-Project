@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://beqq45oeamj6j"]
+
+[ext_resource type="Script" uid="uid://brpkbibdvi2j0" path="res://Scripts/sword.gd" id="1_6wdhb"]
+[ext_resource type="Texture2D" uid="uid://dsilpe3hdjtoc" path="res://GAME ASSETS/SWORD AND SLASH 4 FRAMES (1)test.png" id="1_goa0h"]
+[ext_resource type="AudioStream" uid="uid://ykqku2blia73" path="res://GAME ASSETS/sfx/sword/swordslash_universfield.mp3" id="3_d6wag"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6wdhb"]
+atlas = ExtResource("1_goa0h")
+region = Rect2(0, 0, 1026, 1026)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6wag"]
+atlas = ExtResource("1_goa0h")
+region = Rect2(1026, 0, 1026, 1026)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kb2vl"]
+atlas = ExtResource("1_goa0h")
+region = Rect2(2052, 0, 1026, 1026)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6j4cb"]
+atlas = ExtResource("1_goa0h")
+region = Rect2(0, 1026, 1026, 1026)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ksptp"]
+atlas = ExtResource("1_goa0h")
+region = Rect2(1026, 1026, 1026, 1026)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uo8h"]
+atlas = ExtResource("1_goa0h")
+region = Rect2(2052, 1026, 1026, 1026)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gx3d"]
+atlas = ExtResource("1_goa0h")
+region = Rect2(0, 2052, 1026, 1026)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_641iy"]
+atlas = ExtResource("1_goa0h")
+region = Rect2(1026, 2052, 1026, 1026)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_juuhp"]
+atlas = ExtResource("1_goa0h")
+region = Rect2(2052, 2052, 1026, 1026)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ud72p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6wdhb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6wag")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kb2vl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6j4cb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ksptp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5uo8h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gx3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_641iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_juuhp")
+}],
+"loop": false,
+"name": &"swordswing",
+"speed": 13.0
+}]
+
+[node name="sword" type="Node2D" unique_id=1034577537]
+script = ExtResource("1_6wdhb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=307637356]
+position = Vector2(99, -45)
+scale = Vector2(0.53606236, 0.5467836)
+sprite_frames = SubResource("SpriteFrames_ud72p")
+animation = &"swordswing"
+frame = 8
+frame_progress = 1.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1007167572]
+stream = ExtResource("3_d6wag")
