@@ -29,4 +29,5 @@ func complete_level(level_number: int):
 
 # Function to change the scene
 func change_to_gamemap2():
-		get_tree().change_scene_to_file("res://Scenes/gamemap2.tscn")
+	Bosstransition.transition("res://Scenes/gamemap2.tscn")
+	get_tree().change_scene_to_file("res://Scenes/gamemap2.tscn")

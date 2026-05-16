@@ -213,7 +213,7 @@ limit_bottom = 3900
 [node name="weaponholder" type="Node2D" parent="." unique_id=389530661]
 
 [node name="weaponholderswap" type="Timer" parent="." unique_id=399891874]
-wait_time = 5.0
+wait_time = 8.0
 autostart = true
 
 [node name="HealthBar" type="Node2D" parent="." unique_id=874183894]

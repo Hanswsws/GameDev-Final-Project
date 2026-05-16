@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Musicmanager="*uid://dghyttwjk63n"
 Gamemanager="*uid://cripegqlmcnis"
 SaveSystem="*uid://cfgj2bf1y71me"
+Bosstransition="*uid://kc6ajm7lk2d"
 
 [display]
 
