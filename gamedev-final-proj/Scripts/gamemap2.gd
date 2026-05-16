@@ -1,46 +1,56 @@
 extends Node2D
 
-
-const KILLS_TO_COMPLETE = 50
-
-var kill_count = 0
 var level_complete = false
-var transition_scene = preload("res://Scenes/level_transition.tscn")
-
 
 func _ready():
-
 	Gamemanager.current_level = 2
 	Musicmanager.play_boss_music()
 
+	# Restore player health carried from Level 1
 	var player = get_tree().get_first_node_in_group("player")
 	if player and Gamemanager.has_meta("carry_health"):
 		var carried = Gamemanager.get_meta("carry_health")
 		player.health = clamp(carried, 20, 100)
+		player.health_changed.emit(player.health, player.max_health)
 		print("Level 2: Restored player health to ", player.health)
 
-	Gamemanager.score_changed.connect(_on_score_changed)
+	# Connect to the boss signal once scene is fully loaded
+	call_deferred("_connect_to_boss")
 
+func _connect_to_boss():
+	# Find the robot boss in the scene
+	for node in get_tree().get_nodes_in_group("enemies"):
+		if node.has_signal("boss_died"):
+			node.boss_died.connect(_on_boss_died)
+			print("gamemap2: Connected to boss_died signal")
 
-func _on_score_changed(new_score):
-	kill_count = new_score / 50
-	if kill_count >= KILLS_TO_COMPLETE and not level_complete:
-		_trigger_level_complete()
+	# Also catch bosses that spawn later
+	get_tree().node_added.connect(_on_node_added)
 
-func _trigger_level_complete():
+func _on_node_added(node: Node):
+	if node.has_signal("boss_died"):
+		await get_tree().process_frame
+		if is_instance_valid(node) and not node.boss_died.is_connected(_on_boss_died):
+			node.boss_died.connect(_on_boss_died)
+			print("gamemap2: Connected to newly spawned boss")
+
+func _on_boss_died():
+	if level_complete:
+		return
 	level_complete = true
-	print("Level 2 Complete!")
+	print("Robot Boss defeated! Showing The End screen...")
 
 	Gamemanager.complete_level(2)
 
+	# Stop all spawners
 	for spawner in get_tree().get_nodes_in_group("spawners"):
 		spawner.set_process(false)
 
-	Musicmanager.play_boss_music()
-	await get_tree().create_timer(2.0).timeout
+	# Short pause before showing end screen
+	await get_tree().create_timer(1.5).timeout
 
 	var hud = get_tree().get_first_node_in_group("hud")
 	if hud:
-		hud.show_win_screen()
+		hud.show_end_screen()
 	else:
 		get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")

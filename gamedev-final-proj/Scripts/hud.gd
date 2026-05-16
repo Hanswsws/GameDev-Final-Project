@@ -29,3 +29,6 @@ func show_death_screen():
 
 func show_win_screen():
 	death_overlay.show_win_screen()
+
+func show_end_screen():
+	death_overlay.show_end_screen()

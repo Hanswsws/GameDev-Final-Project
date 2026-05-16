@@ -217,7 +217,7 @@ wait_time = 8.0
 autostart = true
 
 [node name="HealthBar" type="Node2D" parent="." unique_id=874183894]
-position = Vector2(18, 1000)
+position = Vector2(18, 1500)
 script = ExtResource("7_3smsa")
 
 [node name="swapsound" type="AudioStreamPlayer2D" parent="." unique_id=2023787135]
