@@ -4,6 +4,7 @@ extends CharacterBody2D
 @export var damage: int = 20
 @export var attack_cooldown: float = 1.0
 @export var max_health: int = 3000
+@onready var healthbar = $bosshealth
 
 var can_attack := true
 var health: int
@@ -81,8 +82,7 @@ func take_damage(amount):
 	health -= amount
 
 	print("Enemy health:", health)
-	if $bosshealth:
-		$bosshealth.value = health
+	healthbar.value = health
 
 	# Play hurt animation
 	$AnimatedSprite2D.play("robotboss_hurt")

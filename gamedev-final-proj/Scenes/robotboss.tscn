@@ -165,10 +165,11 @@ position = Vector2(1, 2)
 shape = SubResource("CircleShape2D_os31p")
 
 [node name="bosshealth" type="ProgressBar" parent="." unique_id=1635933182]
-offset_left = -210.0
-offset_top = -230.0
-offset_right = 221.0
-offset_bottom = -203.0
+offset_left = -151.0
+offset_top = -248.0
+offset_right = 149.0
+offset_bottom = -213.0
+theme_override_font_sizes/font_size = 25
 theme_override_styles/background = SubResource("StyleBoxFlat_belee")
 theme_override_styles/fill = SubResource("StyleBoxFlat_tks4o")
 max_value = 3000.0
