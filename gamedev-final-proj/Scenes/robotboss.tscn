@@ -70,6 +70,15 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_53aos")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crbkl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_84ahi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tks4o")
 }],
 "loop": false,
 "name": &"robotboss_attack",
@@ -152,6 +161,8 @@ scale = Vector2(5.0015874, 3.9301755)
 sprite_frames = SubResource("SpriteFrames_076ti")
 animation = &"robotboss_attack"
 autoplay = "robotboss_walk"
+frame = 6
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=49237962 groups=["enemies"]]
 visible = false

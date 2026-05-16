@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var speed: float = 400.0
-@export var damage: int = 20
+@export var damage: int = 25
 @export var attack_cooldown: float = 1.0
 @export var max_health: int = 3000
 @onready var healthbar = $bosshealth
